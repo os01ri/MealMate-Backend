@@ -28,11 +28,15 @@ const role=require("./routes/admin/role");
 const image=require("./routes/image");
 const category=require("./routes/admin/category");
 const type=require("./routes/admin//type");
-
+const ingredient=require("./routes/admin/ingredient");
+const nutritional=require("./routes/admin/nutritional");
 
 app.use(adminAuth);
 app.use(category);
 app.use(type);
+app.use(ingredient);
+app.use(nutritional);
+
 
 app.use(adminpassword)
 app.use(role)

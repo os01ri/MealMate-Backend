@@ -2,20 +2,19 @@ const path=require("path");
 const {validationResult}=require("express-validator");
 const jwt=require("jsonwebtoken");
 const redis=require("../config/redis");
-// const fs=require("fs");
+const fs=require("fs");
 exports.filename=(file,folder)=>{
 
-    return `${folder}/${Date.now()}${path.extname(file.originalname)}`
+    return `${folder}/${this.randomString()}${path.extname(file.originalname)}`
     
 }
 
-// exports.rename=(oldpath,folder)=>{
+exports.rename=(oldpath,folder)=>{
 
-    // fs.rename(oldpath,newpath)        
-    // let newpath=this.randomString();
-    // newpath=`${folder}/${Date.now()}${path.extname(newpath)}`
-
-// }
+    let newpath=path.resolve(`${folder}/${this.randomString()}${path.extname(oldpath)}`);
+    fs.renameSync(oldpath,newpath)
+    return newpath;
+}
 
 
 exports.handleValidation= (req,res,next)=>{

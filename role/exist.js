@@ -1,11 +1,12 @@
-const database=require("../util/databaseConnection");
+const database=require("../models/index");
 const rule=(model,name)=>async(value)=>{
-    
+
     if(!value){
 
         return ;
     }
-    let count=await database.model(model).count({where:{
+    
+    let count=await database.sequelize.model(model).count({where:{
 
         [name]:value
 

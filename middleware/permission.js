@@ -1,4 +1,4 @@
-const Admin=require("../model/admin");
+const Admin=require("../models/admin");
 module.exports=(permission)=>{
 
     return async(req,res,next)=>{

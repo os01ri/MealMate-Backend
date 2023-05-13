@@ -1,15 +1,19 @@
-const Admin=require("../../model/admin");
+const db = require("../../models");
 const util=require("../../util/helper");
 exports.login=async(req,res,next)=>{
 
     let email=req.body.email;
     let password=req.body.password;
-    let admin=await Admin.findOne({
+    let admin=await db.admin.findOne({
         where:{
             email            
+        },
+        include:{
+
+            model:db.role
         }        
+        
     });
-    // return res.status(200).json(admin   )
     if(admin.comparePassword(password)){
 
         admin=admin.toJSON();     

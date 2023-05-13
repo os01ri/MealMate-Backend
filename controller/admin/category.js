@@ -1,17 +1,17 @@
 const fs=require("fs");
 const path = require("path");
 const util=require("../../util/helper");
-const Category = require("../../model/category");
+const Category = require("../../models/category");
 exports.store=async(req,res,next)=>{
 
 
     let name=req.body.name;
     let oldpath=req.body.url;
-    // move new image
+    let newpath=util.rename(oldpath,"public/category")
     let category=await Category.create({
 
         name,
-        url:oldpath
+        url:newpath
     })
  
     return res.status(200).json(category);

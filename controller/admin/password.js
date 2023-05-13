@@ -1,4 +1,4 @@
-const Admin = require("../../model/admin");
+const Admin = require("../../models/admin");
 const util=require("../../util/helper");
 const mail=require("../../config/mail");
 const { where } = require("sequelize");

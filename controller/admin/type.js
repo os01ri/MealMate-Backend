@@ -1,15 +1,16 @@
-const Type = require("../../model/type");
+const Type = require("../../models/type");
 const fs=require("fs");
+const util=require("../../util/helper");
 exports.store=async(req,res,next)=>{
 
     
     let name=req.body.name;
     let oldpath=req.body.url;
-    // move new image
+    let newpath=util.rename(oldpath,"public/type")    
     let type=await Type.create({
 
         name,
-        url:oldpath
+        url:newpath
     })
  
     return res.status(200).json(type);

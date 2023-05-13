@@ -3,6 +3,9 @@ module.exports=[
     "admin",
     "role",
     "category",
-    "type"
+    "type",
+    "ingredient",
+    "nutritional",
+    "recipe"
 
 ];

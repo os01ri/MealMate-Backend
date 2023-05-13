@@ -6,14 +6,14 @@ const sequelize=new Sequelize(process.env.DATABASE_NAME,process.env.DATABASE_USE
 });
 
 
-sequelize.beforeSync(()=>{
+// sequelize.beforeSync(()=>{
 
-    Object.values(sequelize.models).map(model=>{        
-        if(typeof model.associate==="function")
-        model.associate(sequelize.models);
-    })
+//     Object.values(sequelize.models).map(model=>{        
+//         if(typeof model.associate==="function")
+//         model.associate(sequelize.models);
+//     })
 
 
-})
+// })
 
 module.exports=sequelize;
