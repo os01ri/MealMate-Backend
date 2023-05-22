@@ -24462,3 +24462,107 @@
   message: 'HTTP PUT /user/grocery/3?ingredient_id=00be5bb1-8757-4224-be1b-c9b27675aa37&quantity=3',
   timestamp: '2023-05-18T13:27:56.587Z'
 }
+{
+  meta: {
+    req: {
+      url: '/admin/login',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2b0b1dee-c548-4887-842e-93c8012f5dd7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/admin/login',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 31
+  },
+  level: 'warn',
+  message: 'HTTP POST /admin/login',
+  timestamp: '2023-05-22T10:35:42.969Z'
+}
+{
+  meta: {
+    req: {
+      url: '/admin/login',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f7c626b3-37a3-4237-8c06-01ab28b90a96',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/admin/login',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /admin/login',
+  timestamp: '2023-05-22T10:36:49.863Z'
+}
+{
+  meta: {
+    req: {
+      url: '/admin/login',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '46b09a27-28a1-46d2-b356-6a2beba24fab',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/admin/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 146
+  },
+  level: 'info',
+  message: 'HTTP POST /admin/login',
+  timestamp: '2023-05-22T10:37:22.233Z'
+}
+{
+  meta: {
+    req: {
+      url: '/admin/refreshtoken',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f514c2f4-f931-4d28-ab98-b5f9df488605',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '200'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/admin/refreshtoken',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 9
+  },
+  level: 'info',
+  message: 'HTTP POST /admin/refreshtoken',
+  timestamp: '2023-05-22T10:37:48.274Z'
+}

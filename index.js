@@ -57,7 +57,13 @@ app.use(image)
 app.use(error.notFound)
 
 
+app.use((err,req,res,next)=>{
 
+
+    return res.status(500).json({message:"we have error"})
+
+
+})
 
 
 database.sync().then((result)=>{

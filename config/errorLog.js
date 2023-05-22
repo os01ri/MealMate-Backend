@@ -10,7 +10,8 @@ const errorLog=expressWinston.errorLogger({
 
         })
     ],
-    format:format.combine(format.json(),format.timestamp())
+        
+        format:format.combine(format.json(),format.timestamp(),format.prettyPrint())
 
 })
 
