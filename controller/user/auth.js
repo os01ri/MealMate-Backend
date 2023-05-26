@@ -35,7 +35,7 @@ exports.register=async(req,res,next)=>{
             exipred_at
         };
 
-    res.status(200).json(token_info)
+    res.status(200).json(user)
 
 
 
