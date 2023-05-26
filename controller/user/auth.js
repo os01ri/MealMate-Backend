@@ -5,8 +5,8 @@ const mail=require("../../config/mail");
 
 exports.register=async(req,res,next)=>{
 
-
-    let name=req.body.name;
+    let fullName = req.body.fullName;
+    let userName = req.body.name;
     let email=req.body.email;
     let password=req.body.password;
     let logo=req.body.logo;
@@ -15,7 +15,7 @@ exports.register=async(req,res,next)=>{
         logo=util.rename(logo,"public/user")
     }
 
-    let user=await db.user.create({name,email,password,logo,code})
+    let user = await db.user.create({ userName, email, password, fullName, logo, code })
         
 
     mail.sendMail({
