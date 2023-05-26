@@ -34,7 +34,7 @@ exports.register=async(req,res,next)=>{
             refreshToken,
             exipred_at
         };
-
+    user.token_info = token_info;
     res.status(200).json(user)
 
 
