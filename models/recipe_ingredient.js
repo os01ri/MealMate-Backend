@@ -37,7 +37,16 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.DOUBLE,
       allowNull:false
     },
+    unit_id:{
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      references:{
+          model:"Units",
+          key:"id"
+          
+      },
 
+    },
 
   }, {
     sequelize,

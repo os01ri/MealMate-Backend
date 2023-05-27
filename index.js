@@ -7,10 +7,12 @@ const path=require("path");
 const log=require("./config/log");
 const errorLog=require("./config/errorLog");
 const database=require("./util/databaseConnection");
+const response=require("./services/response");
+
+require("express-async-errors")
 
 
-
-
+app.use(response.response);
 app.use(express.static(path.join(__dirname,"public")));
 app.use(cor);
 app.use(express.urlencoded({extended:true}))
@@ -35,6 +37,8 @@ const userauth=require("./routes/user/auth");
 const userpassword=require("./routes/user/password");
 const wishlist=require("./routes/user/wishlist");
 const grocery=require("./routes/user/grocery");
+const admin=require("./routes/admin/admin");
+const unit=require("./routes/admin/unit");
 
 
 
@@ -48,6 +52,9 @@ app.use(userauth);
 app.use(userpassword);
 app.use(wishlist);
 app.use(grocery);
+app.use(admin);
+app.use(unit);
+
 
 
 
@@ -59,13 +66,8 @@ app.use(error.notFound)
 
 app.use((err,req,res,next)=>{
 
-
-    return res.status(500).json({message:"we have error"})
-
-
+    return res.status(500).json({message:err.message})
 })
-
-
 database.sync().then((result)=>{
 
     app.listen(port,()=>{

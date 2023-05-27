@@ -6,7 +6,8 @@ module.exports=(type)=>{
         let refreshToken=req.body.refreshtoken;
         if(!refreshToken){
     
-            res.status(401).json({message:"refreshToken not found"})
+            return res.error(401,"refreshToken not found")
+
         }
         
         try{
@@ -17,7 +18,8 @@ module.exports=(type)=>{
 
         }catch(ex){
 
-            res.status(401).json({message:"Invalid refreshToken"})
+            return res.error(401,"Invalid refreshToken")
+            
 
         }
         

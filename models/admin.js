@@ -59,6 +59,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull:true
 
   },
+  is_superAdmin:{
+
+    type:DataTypes.BOOLEAN,
+    allowNull:false,
+    unique:true,
+    defaultValue:false
+
+  },
   password:{
 
       type:DataTypes.STRING,
@@ -94,6 +102,10 @@ module.exports = (sequelize, DataTypes) => {
     timestamps:false,
     defaultScope:{
 
+      attributes:{
+
+        exclude:["is_superAdmin"]
+      }
 
     }    
 

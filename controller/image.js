@@ -13,10 +13,11 @@ exports.addImage=async(req,res,next)=>{
             await sharp(file.buffer).resize(400,400).toFile(url);        
             images.push(url);
         }        
-        res.status(200).json(images)
+        return res.success(images,"this is the image")
+
     }catch(err){
 
-        res.status(400).json({message:err})
+        return res.error(400,err)
 
     }
 

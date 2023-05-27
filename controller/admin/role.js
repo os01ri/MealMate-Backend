@@ -1,5 +1,5 @@
 const db = require("../../models");
-
+const permissions=require("../../config/permission");
 exports.store=async(req,res,next)=>{
 
 
@@ -9,8 +9,9 @@ exports.store=async(req,res,next)=>{
         name,
         permission
     })
-    res.status(200).json(role)
-    
+
+
+    return res.success(role,"the role was added successfully")
 }
 
 exports.update=async(req,res,next)=>{
@@ -20,7 +21,8 @@ exports.update=async(req,res,next)=>{
     let name=req.query.name;
     let permission=req.query.permission;
     await db.role.update({name,permission},{where:{id}})
-    res.status(200).json()
+    return res.success(role,"the role was updated successfully")
+
 
 
 }
@@ -29,8 +31,7 @@ exports.getall=async(req,res,next)=>{
 
 
     let roles=await db.role.findAll({include:{model:db.admin}})
-
-    return res.status(200).json(roles)
+    return res.success(roles,"this is all role")
 
 }
 
@@ -41,7 +42,8 @@ exports.get=async(req,res,next)=>{
 
     let role=await db.role.findByPk(id,{include:db.admin})
 
-    return res.status(200).json(role)
+    return res.success(role,"this is the role")
+
 
 }
 
@@ -51,6 +53,13 @@ exports.delete=async(req,res,next)=>{
 
     let id=req.params.id;
     await db.role.destroy({where:{id}})
-    res.status(200).json()
+    return res.success({},"the role was deleted successfully")
+}
+
+
+exports.getAllPermission=(req,res,next)=>{
+
+
+    return res.success(permissions,"this is all permission")
 
 }

@@ -17,7 +17,8 @@ module.exports = {
       name:"ali hmaidi",
       email:"alihmaidi019@gmail.com",
       password:"ali450892",
-      role_id:role.id        
+      role_id:role.id,
+      is_superAdmin:true        
   })    
   
 

@@ -28,10 +28,11 @@ exports.login=async(req,res,next)=>{
         };
         admin.token_info=token_info;
 
-        return res.status(200).json(admin)
+        return res.success(admin,"this is your admin information")
+    
     }
 
-    return res.status(200).json({message:"the password is not correnct"})
+    return res.error(403,"the password is not correnct")
 
 
 }
@@ -43,7 +44,10 @@ exports.refreshtoken=async(req,res,next)=>{
     let token=await util.generateToken(req.user.id,process.env.ADMIN_TOKEN_KEY,process.env.ADMIN_TOKEN_EXPIRED_AT);        
     let refreshToken=await util.generateToken(req.user.id,process.env.ADMIN_REFRESH_TOKEN_KEY,process.env.ADMIN_REFRSH_TOKEN_EXPIRED_AT);
     let expired_at=Number.parseInt(process.env.ADMIN_TOKEN_EXPIRED_AT);
-    return res.status(200).json({refreshToken,token,expired_at})    
+
+    return res.success({refreshToken,token,expired_at},"this is your tokens info")
+
+    
     
 
 
@@ -53,9 +57,9 @@ exports.refreshtoken=async(req,res,next)=>{
 exports.logout=async(req,res,next)=>{
 
     util.logout(req)
-    .then(()=>res.status(200).json({message:"you are logout successfully"}))
-    .catch(()=>res.status(500).json({message:"we have error"}))
-
+    .then(()=>res.success({},"you are logout successfully"))
+    .catch(()=>res.error(500,'we have error'))
+    
 
 
 }

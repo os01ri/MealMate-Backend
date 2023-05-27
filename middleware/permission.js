@@ -13,7 +13,8 @@ module.exports=(permission)=>{
             return next()
         }
 
-        res.status(403).json({message:"you dont have permission to do this action"})
+        return res.error(403,"you dont have permission to do this action")
+        
         
 
     }

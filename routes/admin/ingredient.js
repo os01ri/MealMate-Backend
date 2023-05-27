@@ -7,9 +7,9 @@ const storeValidation=require("../../validation/admin/ingredient/store");
 const updateValidation=require("../../validation/admin/ingredient/update");
 const getValidation=require("../../validation/admin/ingredient/get");
 
-router.post("/ingredient/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),storeValidation.store,ingredientController.store).
-post("/ingredient/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),updateValidation.update,ingredientController.update).
-get("/ingredient",ingredientController.getall).
-get("/ingredient/:id",getValidation.get,ingredientController.get).
-delete("/ingredient/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),getValidation.get,ingredientController.delete)
+router.post("/dashboard/ingredient/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),storeValidation.store,ingredientController.store).
+put("/dashboard/ingredient/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),updateValidation.update,ingredientController.update).
+get("/dashboard/ingredient",ingredientController.getall).
+get("/dashboard/ingredient/:id",getValidation.get,ingredientController.get).
+delete("/dashboard/ingredient/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("ingredient"),getValidation.get,ingredientController.delete)
 module.exports=router;

@@ -5,12 +5,13 @@ const Auth=require("../../middleware/Auth");
 const storeValidation=require("../../validation/admin/role/store");
 const updateValidation=require("../../validation/admin/role/update");
 const getValidation=require("../../validation/admin/role/get");
-const permission = require("../../middleware/permission");
+const isSuperAdmin= require("../../middleware/isSuperAdmin");
 
 
-router.post("/role/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("role"),storeValidation.store,roleController.store).
-put("/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("role"),updateValidation.update,roleController.update).
-get("/role",Auth(process.env.ADMIN_TOKEN_KEY),permission("role"),roleController.getall).
-get("/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("role"),getValidation.get,roleController.get).
-delete("/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("role"),getValidation.get,roleController.delete)
+router.post("/dashboard/role/store",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,storeValidation.store,roleController.store).
+put("/dashboard/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,updateValidation.update,roleController.update).
+get("/dashboard/role",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,roleController.getall).
+get("/dashboard/getAllPermission",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,roleController.getAllPermission).
+get("/dashboard/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,getValidation.get,roleController.get).
+delete("/dashboard/role/:id",Auth(process.env.ADMIN_TOKEN_KEY),isSuperAdmin,getValidation.get,roleController.delete)
 module.exports=router;

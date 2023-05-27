@@ -7,7 +7,8 @@ const rule=(model,name,expect=false)=>async(value,{req})=>{
     if(expect){
 
         let id=req.params.id||req.query.id||req.body.id;
-        count=await database.sequelize.model(model).count({where:{[name]:value}});
+        console.log("ali"+id)
+        count=await database.sequelize.model(model).count({where:{[name]:value,id:{[Op.not]:id}}});
         
         console.log("uniq"+count)
     }else{

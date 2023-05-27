@@ -7,13 +7,14 @@ module.exports=(type)=>{
         let headerAuth=req.get("Authorization");
         if(!headerAuth){
     
-            return res.status(401).json({message:"token not found"})
+            return res.error(401,"token not found")
         }
         
         let token=headerAuth.split(" ")[1];
         if(!token){
 
-            return res.status(401).json({message:"token format is not correct "})
+            return res.error(401,"token format is not correct")
+
         }
         try{
 
@@ -23,7 +24,7 @@ module.exports=(type)=>{
             let id=await redis.get(token);
             if(id==null){
 
-                return res.status(401).json({message:"Expired token"})
+                return res.error(401,"Expired token")
 
             }
 
@@ -34,7 +35,7 @@ module.exports=(type)=>{
 
         }catch(ex){
 
-            return res.status(401).json({message:"Invalid token"})
+            return res.error(401,"Invalid token")
 
         }
         

@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       ingredient.belongsToMany(models.recipe,{through:"recipe_ingredient",foreignKey:"ingredient_id",otherKey:"recipe_id"})
       ingredient.belongsToMany(models.user,{through:"wishlist",foreignKey:"ingredient_id",otherKey:"user_id"})
       ingredient.belongsToMany(models.user,{through:"grocery",foreignKey:"ingredient_id",otherKey:"user_id",as:"groceries"})
-      
+      ingredient.belongsTo(models.unit,{foreignKey:"unit_id"}) 
       ingredient.hasMany(models.wishlist,{foreignKey:"ingredient_id"})
       ingredient.hasMany(models.grocery,{foreignKey:"ingredient_id"})
   
@@ -35,11 +35,42 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.STRING,
       allowNull:false,
       unique:true
+    },
+    price:{
+
+      type:DataTypes.DOUBLE,
+      allowNull:false,
+      
+    },
+    unit_id:{
+
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      references:{
+          model:"Units",
+          key:"id"
+          
+      },
+
+    },
+    price_by:{
+
+      type:DataTypes.DOUBLE,
+      allowNull:false,
+
     }
 
   }, {
     sequelize,
     modelName: 'ingredient',
+    defaultScope:{
+
+      attributes:{
+
+        exclude:["unit_id"]
+      }
+
+    },
     timestamps:false
   });
   return ingredient;

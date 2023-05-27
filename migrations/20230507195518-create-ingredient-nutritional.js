@@ -27,14 +27,21 @@ module.exports = {
       allowNull:false
 
     },
-    createdAt: {
-      allowNull: false,
-      type: Sequelize.DATE
+    
+    unit_id:{
+
+      type:Sequelize.INTEGER,
+      allowNull:false
+
     },
-    updatedAt: {
-      allowNull: false,
-      type: Sequelize.DATE
-    }
+
+    
+    precent:{
+
+      type:Sequelize.INTEGER,
+      allowNull:false
+
+    },
 
   
 

@@ -7,9 +7,9 @@ const storeValidation=require('../../validation/admin/type/store');
 const updateValidation=require('../../validation/admin/type/update');
 const getValidation=require('../../validation/admin/type/get');
 
-router.post("/type/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),storeValidation.store,typeController.store).
-put("/type/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),updateValidation.update,typeController.update).
-get("/type",typeController.getall).
-get("/type/:id",getValidation.get,typeController.get).
-delete("/type/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),getValidation.get,typeController.delete)
+router.post("/dashboard/type/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),storeValidation.store,typeController.store).
+put("/dashboard/type/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),updateValidation.update,typeController.update).
+get("/dashboard/type",typeController.getall).
+get("/dashboard/type/:id",getValidation.get,typeController.get).
+delete("/dashboard/type/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("type"),getValidation.get,typeController.delete)
 module.exports=router;

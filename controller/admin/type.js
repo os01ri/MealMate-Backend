@@ -1,9 +1,10 @@
 const fs=require("fs");
 const util=require("../../util/helper");
 const db = require("../../models");
+const { type } = require("os");
 exports.store=async(req,res,next)=>{
 
-        
+     
     let name=req.body.name;
     let oldpath=req.body.url;
     let newpath=util.rename(oldpath,"public/type")    
@@ -13,8 +14,7 @@ exports.store=async(req,res,next)=>{
         url:newpath
     })
  
-    return res.status(200).json(type);
-
+    return res.success(type,"the type was added successfully")
 
 
 }
@@ -32,7 +32,7 @@ exports.update=async(req,res,next)=>{
     }
     // remove old image and move new image 
     await db.type.update({name,url},{where:{id}})
-    res.status(200).json()
+    return res.success({},"the type was updsted successfully")
 
 
 
@@ -41,7 +41,7 @@ exports.update=async(req,res,next)=>{
 exports.getall=async(req,res,next)=>{
 
     let types=await db.type.findAll()
-    res.status(200).json(types)
+    return res.success(types,"this is all type")
 
 
 
@@ -54,7 +54,7 @@ exports.get=async(req,res,next)=>{
 
     let id=req.params.id;
     let type=await db.type.findByPk(id)
-    res.status(200).json(type)
+    return res.success(type,"this is your type")
 
 
 }
@@ -66,6 +66,7 @@ exports.delete=async(req,res,next)=>{
     let type=await db.type.findByPk(id);
     await db.type.destroy({where:{id}})
     fs.unlinkSync(type.url)
-    res.status(200).json()
+    return res.success({},"the type was deleted successfully")
+    
 
 }

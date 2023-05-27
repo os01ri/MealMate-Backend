@@ -16,6 +16,24 @@ module.exports = {
         type:Sequelize.STRING,
         allowNull:false,
         unique:true
+      },
+      price:{
+
+        type:Sequelize.DOUBLE,
+        allowNull:false,
+        
+      },
+      unit_id:{
+
+        type:Sequelize.INTEGER,
+        allowNull:false,
+
+      },
+      price_by:{
+
+        type:Sequelize.DOUBLE,
+        allowNull:false,
+
       }
 
     });

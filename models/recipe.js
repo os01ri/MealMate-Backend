@@ -48,6 +48,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull:true
 
     },
+    status:{
+
+      type:DataTypes.BOOLEAN,
+      allowNull:true,
+      defaultValue:false
+
+    },
+
     type_id:{
 
       type:DataTypes.UUID,

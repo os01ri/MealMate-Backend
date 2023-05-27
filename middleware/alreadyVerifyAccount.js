@@ -6,9 +6,7 @@ module.exports=async(req,res,next)=>{
 
     if(user.status){
 
-
-        return res.status(200).json({message:"the Account is already verifed"})
-
+        return res.success({},"the Account is already verifed")
     }
 
     next();

@@ -26,7 +26,12 @@ module.exports = {
         allowNull:false
       },
       
-
+      unit_id:{
+  
+        type:Sequelize.INTEGER,
+        allowNull:false
+      },
+  
     });
   },
   async down(queryInterface, Sequelize) {

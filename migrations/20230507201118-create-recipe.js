@@ -33,6 +33,13 @@ module.exports = {
         allowNull:true
 
       },
+      status:{
+
+        type:Sequelize.BOOLEAN,
+        allowNull:true,
+        defaultValue:false
+
+      },
       type_id:{
 
         type:Sequelize.UUID,

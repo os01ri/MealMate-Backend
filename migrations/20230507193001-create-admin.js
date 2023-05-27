@@ -45,6 +45,12 @@ module.exports = {
         type:Sequelize.STRING,
         allowNull:true
     },
+    is_superAdmin:{
+
+        type:Sequelize.BOOLEAN,
+        allowNull:false,
+        unique:true
+    },
     role_id:{
 
         type:Sequelize.UUID,

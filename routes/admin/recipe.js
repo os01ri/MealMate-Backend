@@ -9,9 +9,9 @@ const storeValidation=require("../../validation/admin/recipe/store");
 const getValidation=require("../../validation/admin/recipe/get");
 
 
-router.post("/recipe/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),storeValidation.store,recipeController.store).
+router.post("/dashboard/recipe/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),storeValidation.store,recipeController.store).
 // put("/nutritional/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("nutritional"),updateValidation.update,nutritionalController.update).
-get("/recipe",recipeController.getall).
-get("/recipe/:id",getValidation.get,recipeController.get).
-delete("/recipe/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),getValidation.get,recipeController.delete)
+get("/dashboard/recipe",recipeController.getall).
+get("/dashboard/recipe/:id",getValidation.get,recipeController.get).
+delete("/dashboard/recipe/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),getValidation.get,recipeController.delete)
 module.exports=router;
