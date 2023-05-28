@@ -44,6 +44,7 @@ const usertype=require("./routes/user/type");
 const usernutritional=require("./routes/user/nutritional");
 const useringredient=require("./routes/user/ingredient");
 const userrecipe=require("./routes/user/recipe");
+const userorder=require("./routes/user/order");
 
 
 
@@ -64,6 +65,7 @@ app.use(usertype);
 app.use(usernutritional);
 app.use(useringredient);
 app.use(userrecipe);
+app.use(userorder);
 
 
 

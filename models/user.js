@@ -16,6 +16,8 @@ module.exports = (sequelize, DataTypes) => {
       User.belongsToMany(models.ingredient,{through:"wishlist",foreignKey:"user_id",otherKey:"ingredient_id"})
       User.belongsToMany(models.ingredient,{through:"grocery",foreignKey:"user_id",otherKey:"ingredient_id",as:"groceries"})
       User.hasMany(models.recipe,{foreignKey:"user_id"})
+      User.hasMany(models.order,{foreignKey:"user_id"})
+
     }
   }
 

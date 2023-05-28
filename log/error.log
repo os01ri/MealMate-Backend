@@ -5,3 +5,2607 @@
 {"level":"error","message":"middlewareError","meta":{"date":"Wed May 17 2023 06:57:31 GMT-0400 (Eastern Daylight Time)","error":{"body":"{\n\n    \"name\":\"dsfsfsdf\",\n    \"description\":\"dfsf\",\n    \"time\":25,\n    \"url\":/home/alihmaidi/Desktop/universityfood/public/temp/86835721684320864220.jpg,\n    \"type_id\":\"1ea22e09-b06c-4e5f-a410-895e5cff0194\",\n    \"category_id\":\"c5e7124f-0220-46d8-9fd7-0126af8253ca\",\n    \"step\":[\n\n        {\n            \"name\":\"potato\",\n            \"rank\":1\n        },\n        {\n\n            \"rank\":2\n        }\n\n    ]\n\n\n}","expose":true,"status":400,"statusCode":400,"type":"entity.parse.failed"},"exception":true,"level":"error","message":"uncaughtException: Unexpected token / in JSON at position 77\nSyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","os":{"loadavg":[0.54,0.57,0.66],"uptime":10617.47},"process":{"argv":["/usr/bin/node","/home/alihmaidi/Desktop/universityfood/index.js"],"cwd":"/home/alihmaidi/Desktop/universityfood","execPath":"/usr/bin/node","gid":1000,"memoryUsage":{"arrayBuffers":1274424,"external":2198018,"heapTotal":76058624,"heapUsed":53946408,"rss":135532544},"pid":58660,"uid":1000,"version":"v18.14.1"},"req":{"headers":{"accept":"application/json","accept-encoding":"gzip, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4ZmMyMDg3LWM4ZjItNDk2NS1hZTIyLTQ3ZjA1MzMxNmIyZiIsImlhdCI6MTY4NDMyMDgxOSwiZXhwIjoxNjg0MzI0NDE5fQ.H0Eik6PXo5DfifJu_T6yk17Sevhfnqp-uwiLsC9HBJM","connection":"keep-alive","content-length":"403","content-type":"application/json","host":"localhost:5000","postman-token":"16ed3494-0a24-4bd5-8799-b10594882c1e","user-agent":"PostmanRuntime/7.32.2"},"httpVersion":"1.1","method":"POST","originalUrl":"/recipe/store","query":{},"url":"/recipe/store"},"stack":"SyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":null,"file":null,"function":"JSON.parse","line":null,"method":"parse","native":false},{"column":19,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js","function":"parse","line":89,"method":null,"native":false},{"column":18,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js","function":null,"line":128,"method":null,"native":false},{"column":9,"file":"node:async_hooks","function":"AsyncResource.runInAsyncScope","line":204,"method":"runInAsyncScope","native":false},{"column":16,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"invokeCallback","line":231,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"done","line":220,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"IncomingMessage.onEnd","line":280,"method":"onEnd","native":false},{"column":28,"file":"node:events","function":"IncomingMessage.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"endReadableNT","line":1359,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":82,"method":"processTicksAndRejections","native":false}]}}
 {"level":"error","message":"middlewareError","meta":{"date":"Wed May 17 2023 06:58:28 GMT-0400 (Eastern Daylight Time)","error":{"body":"{\n\n    \"name\":\"dsfsfsdf\",\n    \"description\":\"dfsf\",\n    \"time\":25,\n    \"url\":/home/alihmaidi/Desktop/universityfood/public/temp/86835721684320864220.jpg,\n    \"type_id\":\"1ea22e09-b06c-4e5f-a410-895e5cff0194\",\n    \"category_id\":\"c5e7124f-0220-46d8-9fd7-0126af8253ca\",\n    \"step\":[\n\n        {\n            \"name\":\"potato\",\n            \"rank\":1\n        },\n        {\n\n            \"rank\":2\n        }\n\n    ]\n\n\n}","expose":true,"status":400,"statusCode":400,"type":"entity.parse.failed"},"exception":true,"level":"error","message":"uncaughtException: Unexpected token / in JSON at position 77\nSyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","os":{"loadavg":[0.45,0.53,0.64],"uptime":10674.79},"process":{"argv":["/usr/bin/node","/home/alihmaidi/Desktop/universityfood/index.js"],"cwd":"/home/alihmaidi/Desktop/universityfood","execPath":"/usr/bin/node","gid":1000,"memoryUsage":{"arrayBuffers":1430949,"external":2354543,"heapTotal":76058624,"heapUsed":54432064,"rss":136241152},"pid":59203,"uid":1000,"version":"v18.14.1"},"req":{"headers":{"accept":"application/json","accept-encoding":"gzip, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4ZmMyMDg3LWM4ZjItNDk2NS1hZTIyLTQ3ZjA1MzMxNmIyZiIsImlhdCI6MTY4NDMyMDgxOSwiZXhwIjoxNjg0MzI0NDE5fQ.H0Eik6PXo5DfifJu_T6yk17Sevhfnqp-uwiLsC9HBJM","connection":"keep-alive","content-length":"403","content-type":"application/json","host":"localhost:5000","postman-token":"5d7a900d-4cdb-4057-897d-95d1b4ca4a1b","user-agent":"PostmanRuntime/7.32.2"},"httpVersion":"1.1","method":"POST","originalUrl":"/recipe/store","query":{},"url":"/recipe/store"},"stack":"SyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":null,"file":null,"function":"JSON.parse","line":null,"method":"parse","native":false},{"column":19,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js","function":"parse","line":89,"method":null,"native":false},{"column":18,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js","function":null,"line":128,"method":null,"native":false},{"column":9,"file":"node:async_hooks","function":"AsyncResource.runInAsyncScope","line":204,"method":"runInAsyncScope","native":false},{"column":16,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"invokeCallback","line":231,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"done","line":220,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"IncomingMessage.onEnd","line":280,"method":"onEnd","native":false},{"column":28,"file":"node:events","function":"IncomingMessage.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"endReadableNT","line":1359,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":82,"method":"processTicksAndRejections","native":false}]}}
 {"level":"error","message":"middlewareError","meta":{"date":"Wed May 17 2023 07:00:15 GMT-0400 (Eastern Daylight Time)","error":{"body":"{\n\n    \"name\":\"dsfsfsdf\",\n    \"description\":\"dfsf\",\n    \"time\":25,\n    \"url\":/home/alihmaidi/Desktop/universityfood/public/temp/86835721684320864220.jpg,\n    \"type_id\":\"1ea22e09-b06c-4e5f-a410-895e5cff0194\",\n    \"category_id\":\"c5e7124f-0220-46d8-9fd7-0126af8253ca\",\n    \"step\":[\n\n        {\n            \"name\":\"potato\",\n            \"rank\":1\n        },\n        {\n\n            \"rank\":2\n        }\n\n    ]\n\n\n}","expose":true,"status":400,"statusCode":400,"type":"entity.parse.failed"},"exception":true,"level":"error","message":"uncaughtException: Unexpected token / in JSON at position 77\nSyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","os":{"loadavg":[1.51,0.78,0.71],"uptime":10781.31},"process":{"argv":["/usr/bin/node","/home/alihmaidi/Desktop/universityfood/index.js"],"cwd":"/home/alihmaidi/Desktop/universityfood","execPath":"/usr/bin/node","gid":1000,"memoryUsage":{"arrayBuffers":339346,"external":1260774,"heapTotal":42242048,"heapUsed":29144032,"rss":93085696},"pid":60030,"uid":1000,"version":"v18.14.1"},"req":{"headers":{"accept":"application/json","accept-encoding":"gzip, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4ZmMyMDg3LWM4ZjItNDk2NS1hZTIyLTQ3ZjA1MzMxNmIyZiIsImlhdCI6MTY4NDMyMDgxOSwiZXhwIjoxNjg0MzI0NDE5fQ.H0Eik6PXo5DfifJu_T6yk17Sevhfnqp-uwiLsC9HBJM","connection":"keep-alive","content-length":"403","content-type":"application/json","host":"localhost:5000","postman-token":"6c9abd2b-6c1b-4b59-8e7f-ae8d90ef2f57","user-agent":"PostmanRuntime/7.32.2"},"httpVersion":"1.1","method":"POST","originalUrl":"/recipe/store","query":{},"url":"/recipe/store"},"stack":"SyntaxError: Unexpected token / in JSON at position 77\n    at JSON.parse (<anonymous>)\n    at parse (/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js:89:19)\n    at /home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n    at invokeCallback (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:231:16)\n    at done (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:220:7)\n    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js:280:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":null,"file":null,"function":"JSON.parse","line":null,"method":"parse","native":false},{"column":19,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/types/json.js","function":"parse","line":89,"method":null,"native":false},{"column":18,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/body-parser/lib/read.js","function":null,"line":128,"method":null,"native":false},{"column":9,"file":"node:async_hooks","function":"AsyncResource.runInAsyncScope","line":204,"method":"runInAsyncScope","native":false},{"column":16,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"invokeCallback","line":231,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"done","line":220,"method":null,"native":false},{"column":7,"file":"/home/alihmaidi/Desktop/universityfood/node_modules/raw-body/index.js","function":"IncomingMessage.onEnd","line":280,"method":"onEnd","native":false},{"column":28,"file":"node:events","function":"IncomingMessage.emit","line":513,"method":"emit","native":false},{"column":12,"file":"node:internal/streams/readable","function":"endReadableNT","line":1359,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":82,"method":"processTicksAndRejections","native":false}]}}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:40:50 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 53754,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 140148736,
+        heapTotal: 81039360,
+        heapUsed: 54616352,
+        external: 1520331,
+        arrayBuffers: 596737
+      }
+    },
+    os: { loadavg: [ 1.5, 1.04, 0.87 ], uptime: 8905.28 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI2NDk3MSwiZXhwIjoxNjg1MjY4NTcxfQ.4GyKp7bWVUJh-jkkxR03we_A6J7nYVKFm9PC_NcwZiw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '63b1b16a-9b40-4f77-b07a-3985b6e1d21e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:40:50.131Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:41:21 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 53968,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 140619776,
+        heapTotal: 81301504,
+        heapUsed: 54659224,
+        external: 1536385,
+        arrayBuffers: 612791
+      }
+    },
+    os: { loadavg: [ 1.4, 1.06, 0.88 ], uptime: 8936.42 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI2NDk3MSwiZXhwIjoxNjg1MjY4NTcxfQ.4GyKp7bWVUJh-jkkxR03we_A6J7nYVKFm9PC_NcwZiw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '7650d9df-8b44-4486-ad28-630fea1c55ee',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:41:21.271Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:41:32 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 54117,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 139497472,
+        heapTotal: 80777216,
+        heapUsed: 54567200,
+        external: 1517457,
+        arrayBuffers: 593863
+      }
+    },
+    os: { loadavg: [ 1.39, 1.08, 0.89 ], uptime: 8947.75 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI2NDk3MSwiZXhwIjoxNjg1MjY4NTcxfQ.4GyKp7bWVUJh-jkkxR03we_A6J7nYVKFm9PC_NcwZiw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2959f7da-333b-4614-bc4c-c1c6c8d8d7c6',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:41:32.593Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:41:52 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 54181,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 92696576,
+        heapTotal: 34377728,
+        heapUsed: 31554256,
+        external: 1172606,
+        arrayBuffers: 251178
+      }
+    },
+    os: { loadavg: [ 1.22, 1.06, 0.89 ], uptime: 8967.66 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI2NDk3MSwiZXhwIjoxNjg1MjY4NTcxfQ.4GyKp7bWVUJh-jkkxR03we_A6J7nYVKFm9PC_NcwZiw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '73db3027-a2dc-4a2f-bf89-b33a739aa04b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:41:52.506Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:42:14 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 54181,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 94240768,
+        heapTotal: 35164160,
+        heapUsed: 31866648,
+        external: 1173870,
+        arrayBuffers: 252402
+      }
+    },
+    os: { loadavg: [ 0.94, 1, 0.87 ], uptime: 8989.31 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'a26f3832-ac0b-4635-a119-3be0db4cdbd4',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:42:14.157Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:42:22 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 54406,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 140398592,
+        heapTotal: 81039360,
+        heapUsed: 55055096,
+        external: 1512139,
+        arrayBuffers: 588545
+      }
+    },
+    os: { loadavg: [ 1.11, 1.04, 0.89 ], uptime: 8997.43 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ccbee378-f187-47a0-9d8f-843a3df58ce7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:42:22.274Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:42:55 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 54632,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 140898304,
+        heapTotal: 81039360,
+        heapUsed: 55048712,
+        external: 1525649,
+        arrayBuffers: 602055
+      }
+    },
+    os: { loadavg: [ 1.49, 1.13, 0.92 ], uptime: 9031 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'fbf363af-c164-4ddf-83ef-ec927549f26a',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:42:55.849Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:43:58 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55146,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 139669504,
+        heapTotal: 81039360,
+        heapUsed: 55020736,
+        external: 1525649,
+        arrayBuffers: 602055
+      }
+    },
+    os: { loadavg: [ 1.09, 1.05, 0.91 ], uptime: 9093.47 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '4831d18c-015b-43b4-86b6-a584e3e6461f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:43:58.317Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:44:29 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55344,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 140414976,
+        heapTotal: 80777216,
+        heapUsed: 55044472,
+        external: 1520331,
+        arrayBuffers: 596737
+      }
+    },
+    os: { loadavg: [ 0.8, 0.98, 0.89 ], uptime: 9124.82 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'b68da33c-c67e-49f5-bf03-887005526f7f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:44:29.665Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:45:04 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55658,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 138711040,
+        heapTotal: 81039360,
+        heapUsed: 54966024,
+        external: 1520331,
+        arrayBuffers: 596737
+      }
+    },
+    os: { loadavg: [ 0.64, 0.92, 0.87 ], uptime: 9159.41 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '5145813a-3c96-4cc6-bc41-ab117855c8b5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:45:04.258Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:45:09 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55736,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 139362304,
+        heapTotal: 81039360,
+        heapUsed: 54871592,
+        external: 1533841,
+        arrayBuffers: 610247
+      }
+    },
+    os: { loadavg: [ 0.83, 0.95, 0.88 ], uptime: 9164.48 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '81a0451f-5b43-4b1a-96c0-040a60b2b914',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:45:09.329Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:45:31 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55736,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 93736960,
+        heapTotal: 35164160,
+        heapUsed: 30978688,
+        external: 1077718,
+        arrayBuffers: 156250
+      }
+    },
+    os: { loadavg: [ 0.89, 0.96, 0.89 ], uptime: 9186.69 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '3f225ffe-4be8-4a3c-961d-ce2c78eff030',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:45:31.538Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:45:45 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55736,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 94171136,
+        heapTotal: 35164160,
+        heapUsed: 31307632,
+        external: 1084885,
+        arrayBuffers: 163417
+      }
+    },
+    os: { loadavg: [ 0.69, 0.91, 0.87 ], uptime: 9201.05 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'fe4e4e1f-34bb-4e46-8155-d2b3dd30b2eb',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:45:45.896Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token c in JSON at position 123
+        at JSON.parse (<anonymous>)
+        at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)
+        at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+        at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)
+        at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)
+        at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '\n' +
+        '    "ingredients":[\n' +
+        '        \n' +
+        '        {\n' +
+        '            "quantity":43,\n' +
+        '            "unit_id":1,\n' +
+        '            "ingredient_id":6c9c6acd-f727-4907-9ff8-db1a9ce4ccb1\n' +
+        '\n' +
+        '        }\n' +
+        '\n' +
+        '    ]    \n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token c in JSON at position 123\n' +
+      'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token c in JSON at position 123\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js:89:19)\n' +
+      '    at /home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)\n' +
+      '    at invokeCallback (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:231:16)\n' +
+      '    at done (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sun May 28 2023 06:45:53 GMT-0400 (Eastern Daylight Time)',
+    process: {
+      pid: 55736,
+      uid: 1000,
+      gid: 1000,
+      cwd: '/home/alihmaidi/Desktop/fooduniversity',
+      execPath: '/usr/bin/node',
+      version: 'v18.14.1',
+      argv: [
+        '/usr/bin/node',
+        '/home/alihmaidi/Desktop/fooduniversity/index.js'
+      ],
+      memoryUsage: {
+        rss: 94388224,
+        heapTotal: 35426304,
+        heapUsed: 31795072,
+        external: 1092052,
+        arrayBuffers: 170584
+      }
+    },
+    os: { loadavg: [ 0.66, 0.9, 0.87 ], uptime: 9209.13 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/types/json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/body-parser/lib/read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 204,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: '/home/alihmaidi/Desktop/fooduniversity/node_modules/raw-body/index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/user/order/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3MDUyNCwiZXhwIjoxNjg1Mjc0MTI0fQ.BXBwmIAyEvzxS_ItfnVuS308EW4ihqRotVpTOxxg_jk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'e9ec0195-3881-4c6d-87c4-5e73b2af777d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '186'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/order/store',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-05-28T10:45:53.979Z'
+}

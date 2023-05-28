@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       unit.hasMany(models.ingredient,{foreignKey:"unit_id"})
       unit.hasMany(models.ingredient_nutritional,{foreignKey:"unit_id"})
       unit.hasMany(models.grocery,{foreignKey:"unit_id"})
+      unit.hasMany(models.orderitem,{foreignKey:"unit_id"})
 
     }
   }

@@ -15,6 +15,8 @@ module.exports = (sequelize, DataTypes) => {
       ingredient.belongsToMany(models.recipe,{through:"recipe_ingredient",foreignKey:"ingredient_id",otherKey:"recipe_id"})
       ingredient.belongsToMany(models.user,{through:"wishlist",foreignKey:"ingredient_id",otherKey:"user_id"})
       ingredient.belongsToMany(models.user,{through:"grocery",foreignKey:"ingredient_id",otherKey:"user_id",as:"groceries"})
+      ingredient.belongsToMany(models.order,{through:"orderitem",foreignKey:"ingredient_id",otherKey:"order_id"})      
+      
       ingredient.belongsTo(models.unit,{foreignKey:"unit_id"}) 
       ingredient.hasMany(models.wishlist,{foreignKey:"ingredient_id"})
       ingredient.hasMany(models.grocery,{foreignKey:"ingredient_id"})
