@@ -13,6 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       
       recipe.belongsTo(models.category,{foreignKey:"category_id"})
       recipe.belongsTo(models.type,{foreignKey:"type_id"})
+      recipe.belongsTo(models.user,{foreignKey:"user_id"})
+
       recipe.hasMany(models.step,{foreignKey:"recipe_id"})
       recipe.belongsToMany(models.ingredient,{through:"recipe_ingredient",foreignKey:"recipe_id",otherKey:"ingredient_id"})
     }
@@ -70,6 +72,17 @@ module.exports = (sequelize, DataTypes) => {
 
     },
 
+    user_id:{
+
+      type:DataTypes.UUID,
+      allowNull:true,
+      references:{
+          model:"user",
+          key:"id"
+          
+      },
+
+    },
     category_id:{
       type:DataTypes.UUID,
       allowNull:false,

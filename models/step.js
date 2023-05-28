@@ -33,6 +33,12 @@ module.exports = (sequelize, DataTypes) => {
         type:DataTypes.INTEGER,
         allowNull:false
     },
+
+    description:{
+
+      type:DataTypes.INTEGER,
+      allowNull:false
+  },
     recipe_id:{
 
       type:DataTypes.UUID,
@@ -50,7 +56,14 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'step',
-    timestamps:false
+    timestamps:false,
+    defaultScope:{
+
+      attributes:{
+
+        exclude:["recipe_id"]
+      }
+    }
   });
   return step;
 };

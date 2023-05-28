@@ -15,10 +15,18 @@ module.exports = (sequelize, DataTypes) => {
       
       User.belongsToMany(models.ingredient,{through:"wishlist",foreignKey:"user_id",otherKey:"ingredient_id"})
       User.belongsToMany(models.ingredient,{through:"grocery",foreignKey:"user_id",otherKey:"ingredient_id",as:"groceries"})
-      
+      User.hasMany(models.recipe,{foreignKey:"user_id"})
     }
   }
 
+  User.prototype.toJSON=function(){
+
+    const values=this.get();
+    delete values.password;
+    delete values.code;
+    return values;
+
+  }
   User.prototype.comparePassword=function(password){
 
     return bcrypt.compareSync(password,this.password);
@@ -70,13 +78,16 @@ module.exports = (sequelize, DataTypes) => {
   status:{
 
     type:DataTypes.BOOLEAN,
-    defaultValue:true
+    defaultValue:false
 },
 
   }, {
     sequelize,
     modelName: 'user',
-    timestamps:false
+    timestamps:false,
+    defaultScope:{
+
+    }
   });
   return User;
 };

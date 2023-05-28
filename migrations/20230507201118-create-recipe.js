@@ -40,6 +40,18 @@ module.exports = {
         defaultValue:false
 
       },
+
+      user_id:{
+
+        type:Sequelize.UUID,
+        allowNull:true,
+        references:{
+            model:"users",
+            key:"id"
+            
+        },
+
+      },
       type_id:{
 
         type:Sequelize.UUID,

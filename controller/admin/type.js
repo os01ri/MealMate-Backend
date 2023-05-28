@@ -23,16 +23,22 @@ exports.update=async(req,res,next)=>{
 
 
     let id=req.params.id;
-    let name=req.body.name;
-    let url=req.body.url;
+    let name=req.query.name;
+    let url=req.query.url;
     if(url==undefined){
 
         await db.type.update({name},{where:{id}})
-        return res.status(200).json()
+        let type=await db.type.findByPk(id);
+        return res.success(type,"the type was updated successfully");
     }
-    // remove old image and move new image 
+    let deletedimage=(await db.type.findByPk(id)).url;
+    fs.unlinkSync(util.getImageUrlFromHttp(deletedimage));
+    let oldpath=req.query.url;
+    url=util.rename(oldpath,"public/type") 
     await db.type.update({name,url},{where:{id}})
-    return res.success({},"the type was updsted successfully")
+    let type=await db.type.findByPk(id);
+    return res.success({type},"the type was updated successfully")
+
 
 
 

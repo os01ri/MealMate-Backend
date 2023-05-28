@@ -18,14 +18,12 @@ exports.sendemail=async(req,res,next)=>{
             subject:"Reset Code",
             text:`You Can Reset Your password by this code ${code}`
         })
-    
-        return res.status(200).json({message:"the email Will send successfully",token})
-    
+        return res.success({token},"the email Will send successfully")
     
 
     }catch(ex){
 
-        return res.status(200).json({message:ex})
+        return res.error(405,ex)
     }
     
 
@@ -43,14 +41,13 @@ exports.checkcode=async(req,res,next)=>{
         let refreshToken=await util.generateToken(req.user.id,process.env.USER_REFRESH_TOKEN_KEY,process.env.USER_REFRSH_TOKEN_EXPIRED_AT);
         let expired_at=Number.parseInt(process.env.USER_TOKEN_EXPIRED_AT);
         util.logout(req);
-        return  res.status(200).json({refreshToken,token,expired_at})    
+
+        return res.success({refreshToken,token,expired_at},"this is tokens info")
 
 
     }
 
-    return res.status(402).json({message:"code is not correct"})
-
-
+    return res.error(402,"code is not correct")
 
 
 
@@ -61,8 +58,7 @@ exports.changepassword=async(req,res,next)=>{
 
     let password=req.body.password;
     await db.user.update({password},{where:{id:req.user.id}})
-    return res.status(200).json()
-
+    return res.success({},"the password was updated successfully");
 
 
 }

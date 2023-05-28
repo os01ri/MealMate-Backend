@@ -7,6 +7,7 @@ exports.store=async(req,res,next)=>{
 
     let name=req.body.name;
     let oldpath=req.body.url;
+
     let newpath=util.rename(oldpath,"public/category")
     let category=await db.category.create({
         name,
@@ -21,16 +22,21 @@ exports.update=async(req,res,next)=>{
 
 
     let id=req.params.id;
-    let name=req.body.name;
-    let url=req.body.url;
+    let name=req.query.name;
+    let url=req.query.url;
     if(url==undefined){
 
         await db.category.update({name},{where:{id}})
-        return res.status(200).json()
+        let category=await db.category.findByPk(id);
+        return res.success(category,"the category was updated successflly")
     }
-    // remove old image and move new image 
-    await Category.update({name,url},{where:{id}})
-    return res.success({},"the category was updated successfully")
+    let deletedimage=(await db.category.findByPk(id)).url;
+    fs.unlinkSync(util.getImageUrlFromHttp(deletedimage));
+    let oldpath=req.query.url;
+    url=util.rename(oldpath,"public/category") 
+    await db.category.update({name,url},{where:{id}})
+    let category=await db.category.findByPk(id);
+    return res.success({category},"the category was updated successfully")
     
 }
 
@@ -63,11 +69,8 @@ exports.delete=async(req,res,next)=>{
     let id=req.params.id;
     let category=await db.category.findByPk(id);
     await db.category.destroy({where:{id}})
-    fs.unlinkSync(category.url)
+    fs.unlinkSync(util.getImageUrlFromHttp(category.url))
     return res.success({},"the category was deleted successfully")
-
-
-
 
 
 }

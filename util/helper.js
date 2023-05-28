@@ -5,15 +5,17 @@ const redis=require("../config/redis");
 const fs=require("fs");
 exports.filename=(file,folder)=>{
 
+
     return `${folder}/${this.randomString()}${path.extname(file.originalname)}`
     
 }
 
 exports.rename=(oldpath,folder)=>{
 
-    let newpath=path.resolve(`${folder}/${this.randomString()}${path.extname(oldpath)}`);
-    fs.renameSync(oldpath,newpath)
-    return newpath;
+    oldpath=this.getImageUrlFromHttp(oldpath);
+    let newpath=`${folder}/${this.randomString()}${path.extname(oldpath)}`;    
+    fs.renameSync(oldpath,path.resolve(newpath))
+    return process.env.APP_URL+newpath;
 }
 
 
@@ -59,6 +61,14 @@ exports.logout=async(req)=>{
 
     let token=req.get("Authorization").split(" ")[1];
     await redis.del(token)        
+}
+
+
+exports.getImageUrlFromHttp=(image)=>{
+
+    let url=image.replace(process.env.APP_URL,"");
+    return path.resolve(url)
+
 }
 
 // exports.removeFile=(folder,file)=>{

@@ -1,4 +1,6 @@
 const db = require("../../models");
+const util=require("../../util/helper");
+const fs=require("fs");
 exports.store=async(req,res,next)=>{
 
 
@@ -7,9 +9,10 @@ exports.store=async(req,res,next)=>{
     let price=req.body.price;
     let unit_id=req.body.unit_id;
     let price_by=req.body.price_by;
+    let url=req.body.url;
+    let newpath=util.rename(url,"public/ingredient")
     let nutritional=req.body.nutritional;
-
-    let ingredient=await db.ingredient.create({name,price,unit_id,price_by});
+    let ingredient=await db.ingredient.create({name,price,unit_id,price_by,url:newpath});
 
     let pivot=nutritional.map(object=>{
         let ob={};
@@ -39,7 +42,21 @@ exports.update=async(req,res,next)=>{
     let unit_id=req.body.unit_id;
     let price_by=req.body.price_by;
     let nutritional=req.body.nutritional;
-    await db.ingredient.update({name,price,unit_id,price_by},{where:{id}})
+    let url=req.body.url;
+    if(url==undefined){
+
+        await db.ingredient.update({name,price,unit_id,price_by},{where:{id}})
+
+    }else{
+
+        let deletedimage=(await db.ingredient.findByPk(id)).url;
+        fs.unlinkSync(util.getImageUrlFromHttp(deletedimage));
+        let oldpath=req.body.url;
+        url=util.rename(oldpath,"public/ingredient") 
+        await db.ingredient.update({name,price,unit_id,price_by,url},{where:{id}})
+
+        
+    }
 
     await db.ingredient_nutritional.destroy({where:{ingredient_id:id}})
 

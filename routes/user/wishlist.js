@@ -8,7 +8,7 @@ const deleteValidation=require("../../validation/user/wishlist/delete");
 // const checkcode=require("../../validation/user/password/checkcode");
 // const changepassword=require("../../validation/user/password/changepassword");
 
-router.post("/user/addtowishlist",addtowishlistValidation.addtowishlist,Auth(process.env.USER_TOKEN_KEY),wishlistController.addtowishlist).
+router.post("/user/wishlist/addtowishlist",addtowishlistValidation.addtowishlist,Auth(process.env.USER_TOKEN_KEY),wishlistController.addtowishlist).
 get("/user/wishlist",Auth(process.env.USER_TOKEN_KEY),wishlistController.getall).
 delete("/user/wishlist/:id",Auth(process.env.USER_TOKEN_KEY),deleteValidation.delete,wishlistController.delete)
 // post("/user/checkcode",Auth(process.env.USER_RESET_TOKEN_KEY),checkcode.checkcode,passwordController.checkcode).

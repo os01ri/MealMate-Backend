@@ -9,6 +9,7 @@ exports.store=[
     check("email").exists().withMessage("email is require").isEmail().withMessage("this field should be email").custom(unique("admin","email")),
     check("password").exists().withMessage("password is required"),
     check("role_id").exists().withMessage("role id is required").custom(exists("role","id")),
+    check("url").custom(exists("temp","url")),
     
     handleError.handleValidation
 

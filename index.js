@@ -13,7 +13,7 @@ require("express-async-errors")
 
 
 app.use(response.response);
-app.use(express.static(path.join(__dirname,"public")));
+app.use("/public",express.static("public"));
 app.use(cor);
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
@@ -39,6 +39,11 @@ const wishlist=require("./routes/user/wishlist");
 const grocery=require("./routes/user/grocery");
 const admin=require("./routes/admin/admin");
 const unit=require("./routes/admin/unit");
+const usercategory=require("./routes/user/category");
+const usertype=require("./routes/user/type");
+const usernutritional=require("./routes/user/nutritional");
+const useringredient=require("./routes/user/ingredient");
+const userrecipe=require("./routes/user/recipe");
 
 
 
@@ -54,6 +59,13 @@ app.use(wishlist);
 app.use(grocery);
 app.use(admin);
 app.use(unit);
+app.use(usercategory);
+app.use(usertype);
+app.use(usernutritional);
+app.use(useringredient);
+app.use(userrecipe);
+
+
 
 
 

@@ -21,6 +21,7 @@ exports.update=async(req,res,next)=>{
     let name=req.query.name;
     let permission=req.query.permission;
     await db.role.update({name,permission},{where:{id}})
+    let role=await db.role.findByPk(id);
     return res.success(role,"the role was updated successfully")
 
 

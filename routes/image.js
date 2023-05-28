@@ -7,11 +7,4 @@ const imageController=require("../controller/image");
 router.post("/addimage",storage.array("image"),imageController.addImage)
 
 
-// router.get("/temp",async(req,res)=>{
-
-//     let temps=await Temp.find({})
-//     res.status(200).json(temps)
-
-// })
-
 module.exports=router;

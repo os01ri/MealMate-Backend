@@ -12,6 +12,8 @@ const getValidation=require("../../validation/admin/recipe/get");
 router.post("/dashboard/recipe/store",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),storeValidation.store,recipeController.store).
 // put("/nutritional/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("nutritional"),updateValidation.update,nutritionalController.update).
 get("/dashboard/recipe",recipeController.getall).
+get("/dashboard/recipe/getunactive",recipeController.getunactive).
+post("/dashboard/recipe/:id/accept",getValidation.get,recipeController.accept).
 get("/dashboard/recipe/:id",getValidation.get,recipeController.get).
 delete("/dashboard/recipe/:id",Auth(process.env.ADMIN_TOKEN_KEY),permission("recipe"),getValidation.get,recipeController.delete)
 module.exports=router;

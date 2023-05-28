@@ -8,6 +8,7 @@ exports.store=async(req,res,next)=>{
     let email=req.body.email;
     let password=req.body.password;
     let logo=req.body.logo;
+
     let role_id=req.body.role_id;
 
     if(logo){
@@ -51,7 +52,7 @@ exports.delete=async(req,res,next)=>{
     await db.admin.destroy({where:{id}})
     if(admin.logo){
 
-        fs.unlinkSync(admin.logo)
+        fs.unlinkSync(util.getImageUrlFromHttp(admin.logo))
 
     }
 

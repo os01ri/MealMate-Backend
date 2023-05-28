@@ -5,6 +5,8 @@ const exists=require("../../../role/exist");
 exports.store=[
 
     check("ingredient_id").exists().withMessage("ingredient id is require").custom(exists("ingredient","id")),
+    check("unit_id").exists().withMessage("unit id is require").custom(exists("unit","id")),
+    
     check("quantity").exists().withMessage("quantity  is require"),
     handleError.handleValidation
 

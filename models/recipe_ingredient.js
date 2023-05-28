@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize');
+const db = require('.');
 module.exports = (sequelize, DataTypes) => {
   class recipe_ingredient extends Model {
     /**
@@ -51,7 +52,16 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'recipe_ingredient',
-    timestamps:false
+    timestamps:false,
+    defaultScope:{
+
+      attributes:{
+
+        exclude:["recipe_id","ingredient_id"]
+      },
+      include:[db.unit]
+
+    }
   });
   return recipe_ingredient;
 };

@@ -42,6 +42,13 @@ module.exports = (sequelize, DataTypes) => {
       allowNull:false,
       
     },
+
+    url:{
+
+      type:DataTypes.STRING,
+      allowNull:false,
+      
+    },
     unit_id:{
 
       type:DataTypes.INTEGER,
