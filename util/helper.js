@@ -55,6 +55,14 @@ exports.randomString=()=>{
     return code;
 }
 
+exports.randomcode=()=>{
+
+
+    let code=`${1000+Math.round(Math.random()*8999)}`;
+    return code;
+
+}
+
 
 exports.logout=async(req)=>{
 

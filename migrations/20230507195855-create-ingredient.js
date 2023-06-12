@@ -37,6 +37,11 @@ module.exports = {
         allowNull:false,
 
       },
+      category_id:{
+        type:Sequelize.UUID,
+        allowNull:false,
+
+      },
       price_by:{
 
         type:Sequelize.DOUBLE,

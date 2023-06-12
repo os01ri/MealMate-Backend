@@ -29,6 +29,8 @@ const adminpassword=require("./routes/admin/password");
 const role=require("./routes/admin/role");
 const image=require("./routes/image");
 const category=require("./routes/admin/category");
+const categoryingredient=require("./routes/admin/categoryingredient");
+
 const type=require("./routes/admin//type");
 const ingredient=require("./routes/admin/ingredient");
 const nutritional=require("./routes/admin/nutritional");
@@ -45,7 +47,6 @@ const usernutritional=require("./routes/user/nutritional");
 const useringredient=require("./routes/user/ingredient");
 const userrecipe=require("./routes/user/recipe");
 const userorder=require("./routes/user/order");
-
 
 
 app.use(adminAuth);
@@ -66,7 +67,7 @@ app.use(usernutritional);
 app.use(useringredient);
 app.use(userrecipe);
 app.use(userorder);
-
+app.use(categoryingredient);
 
 
 

@@ -8,4 +8,4 @@ const Option={
 
 };
 
-module.exports=cors(Option);
+module.exports=cors();

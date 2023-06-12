@@ -47281,3 +47281,2110 @@
   message: 'HTTP POST /user/order/store',
   timestamp: '2023-05-28T12:37:17.974Z'
 }
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '9aca59f0-3fad-4a51-9691-a50851ec958e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------131918847958283326743835',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 126
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T17:47:05.696Z'
+}
+{
+  meta: {
+    req: {
+      url: '/favicon.ico',
+      headers: {
+        host: 'localhost:5000',
+        connection: 'keep-alive',
+        'sec-ch-ua': '"Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+        'sec-ch-ua-platform': '"Linux"',
+        accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'no-cors',
+        'sec-fetch-dest': 'image',
+        referer: 'http://localhost:5000/public/temp/13826561686592025568.png',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/favicon.ico',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 2
+  },
+  level: 'warn',
+  message: 'HTTP GET /favicon.ico',
+  timestamp: '2023-06-12T17:47:19.384Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '3b67e50f-4a70-48fe-a545-c7098a7f77b7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------593284558101965923812325',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 122
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T17:47:35.796Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/password/changepassword',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NTI3NDE0NSwiZXhwIjoxNjg1Mjc3NzQ1fQ.yVSDffAL21Tb-fGcRzO2auXWcxSlmgxvkitVdQamADk',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '8768a327-01bd-42a8-a933-9d3f4d7fdce5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '18'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/user/password/changepassword',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP PUT /user/password/changepassword',
+  timestamp: '2023-06-12T17:54:17.665Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '8d8a2c6c-90af-4b41-83ec-60ae0066df97',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '48'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 118
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-06-12T17:54:49.334Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/password/changepassword',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYjBhYmQ2LTc4ZDUtNGFmNy05Zjk4LWIyMGM2OGMyZmYwOSIsImlhdCI6MTY4NjU5MjQ4OSwiZXhwIjoxNjg2NTk2MDg5fQ.0Klf7pm0IoWequrCT1raXt3-PxFwKf2R5x9VVYPVuNA',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '25a6f451-cd0f-438b-9434-9e8aaa3e0dcd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '18'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/user/password/changepassword',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 83
+  },
+  level: 'info',
+  message: 'HTTP PUT /user/password/changepassword',
+  timestamp: '2023-06-12T17:54:53.950Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NTI3NjA2NSwiZXhwIjoxNjg1Mjc5NjY1fQ.Bt8ITyOofCM188sPU8B-j-O9OnPHY-WGvPfaMIWdfko',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '9f9d07a4-a955-4975-8428-3c8d70c0e834',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 5
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:24:46.676Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'fb5aa9a0-e1be-4044-a1c4-cc8abe91a0ce',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 97
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/auth/login',
+  timestamp: '2023-06-12T18:24:56.975Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'b3acbf09-74af-47f2-91fa-282ee44bcb5f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 403 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:25:06.050Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'a3785192-7df2-489e-ae44-5055fbf722e3',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 25
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:25:28.715Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '16645cbb-5503-4697-abc5-5fb37cf389bf',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------862578020118412172175975',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 122
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:25:59.856Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '325767e1-f586-4b56-a0f6-975250bc7911',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 19
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:26:11.966Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'eba15fdb-6497-4b66-bc70-d0d8626cd02c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 12
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:26:42.027Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '97a97d94-2ab2-45a8-927f-bba1b7e602b2',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 15
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:27:03.878Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f10aa0de-9ce5-4681-9bc8-f482e133f144',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 44
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:27:33.151Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '3b880f4d-0b31-4202-abc4-61361ac63eb9',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------737141047102962163315251',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 122
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:27:39.288Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ae1fab49-9c28-4760-8377-828e63a2ccc2',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 26
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:27:49.868Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '66305cd6-d463-4060-a0fa-77f3fdfe7440',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------263942305295715271580381',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 100
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:28:58.260Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '50fc5946-41a0-4a9c-9af7-bc7a549ff932',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      query: {
+        name: 'fdjksddddc',
+        url: 'http://localhost:5000/public/temp/53101091686594538165.png'
+      }
+    },
+    res: { statusCode: 422 },
+    responseTime: 27
+  },
+  level: 'warn',
+  message: 'HTTP PUT /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+  timestamp: '2023-06-12T18:31:57.476Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2dc736e1-c1ec-4871-8d9c-182b74f3bfe6',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      query: {
+        name: 'fdjksddddc',
+        url: 'http://localhost:5000/public/temp/53101091686594538165.png'
+      }
+    },
+    res: { statusCode: 422 },
+    responseTime: 26
+  },
+  level: 'warn',
+  message: 'HTTP PUT /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+  timestamp: '2023-06-12T18:32:16.447Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '4a849446-014a-46a0-b56d-49254fe43d67',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '0'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+      query: {
+        name: 'fdjksddddc',
+        url: 'http://localhost:5000/public/temp/53101091686594538165.png'
+      }
+    },
+    res: { statusCode: 200 },
+    responseTime: 64
+  },
+  level: 'info',
+  message: 'HTTP PUT /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff?name=fdjksddddc&url=http://localhost:5000/public/temp/53101091686594538165.png',
+  timestamp: '2023-06-12T18:33:44.548Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '3b9069ee-b0f6-4412-94fa-8fd07061cb97',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 2
+  },
+  level: 'warn',
+  message: 'HTTP GET /dashboard/categoryingredient',
+  timestamp: '2023-06-12T18:34:22.530Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '96ee4877-8904-4206-b39a-87dc17f67cfb',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 16
+  },
+  level: 'error',
+  message: 'HTTP GET /dashboard/categoryingredient',
+  timestamp: '2023-06-12T18:35:24.481Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '28a47eca-b8e2-4056-805b-fa926cc5f6c0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 11
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/categoryingredient',
+  timestamp: '2023-06-12T18:35:34.971Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'c1fda9ed-1ae7-4fd9-b0b6-47cf8daf43bf',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 2
+  },
+  level: 'warn',
+  message: 'HTTP GET /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:36:28.002Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'a894d221-bb1d-46c2-816c-b9504be1a980',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:38:03.895Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'b62b8685-2a67-4789-bc92-0132ae31ed70',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 28
+  },
+  level: 'warn',
+  message: 'HTTP DELETE /dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:39:59.427Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'd5eb8460-6ca6-401e-ae6d-877d755a7a6b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 10
+  },
+  level: 'warn',
+  message: 'HTTP DELETE /dashboard/category/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:40:32.646Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '4d02186f-ab14-4e82-b602-4ab71316f388',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 1
+  },
+  level: 'warn',
+  message: 'HTTP DELETE /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:40:51.996Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '57be731b-ad29-485c-b78c-666dc24b2476',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 6
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:41:08.457Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ecb274de-3f79-4955-9f11-782c94de7c0f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 1
+  },
+  level: 'warn',
+  message: 'HTTP DELETE /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:41:18.323Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ca88f62f-8b55-4b5b-8cf7-417deba05857',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP DELETE /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:41:29.197Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTgwMzg0LWI5NWUtNDBjNC05NDU4LWYzZDQ0MGVjN2VlZCIsImlhdCI6MTY4NjU5NDI5NiwiZXhwIjoxNjg2NTk3ODk2fQ.6wxQS_bQ2GULfsv49oTHpcSJ-E2iQJlH8AZPtfqfniw',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2d59dd2c-460a-4fb0-9329-3e2dec20a045',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 42
+  },
+  level: 'info',
+  message: 'HTTP DELETE /dashboard/categoryingredient/33dac730-2de7-49d1-bce3-4c94265cedff',
+  timestamp: '2023-06-12T18:41:47.527Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f332263b-070d-426d-854f-89b306c2878d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 91
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/auth/login',
+  timestamp: '2023-06-12T18:48:54.706Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'cb52c31b-f5dd-477a-8da1-471613a42856',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------215196545542334360151539',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 93
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:48:59.773Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/category/store',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '08eb64cc-e358-4b54-b653-f759c17c29e9',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '91'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/category/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 25
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/category/store',
+  timestamp: '2023-06-12T18:49:03.635Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '21340710-7d71-4d2e-b2eb-0804c4f848d3',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------148852054631377773735452',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 86
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:49:09.449Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '19dfbe0d-5768-44b9-b110-8f71863e86a5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 9
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:49:15.995Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '4ebe632d-ebf3-420d-98b9-65098db6cd05',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:49:36.569Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '7133a93b-b26d-475f-9bd3-25cf9f835f56',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 1
+  },
+  level: 'error',
+  message: 'HTTP GET /dashboard/categoryingredient',
+  timestamp: '2023-06-12T18:49:41.385Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '59c5294a-7a7e-407c-9db4-95936c162d9b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 16
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/categoryingredient',
+  timestamp: '2023-06-12T18:50:01.103Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '7ff511f5-a850-4e48-9d0e-533760f533a4',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '87'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 30
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:54:58.928Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'bd643001-ea1a-41f9-a47d-586f807ac265',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '89'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 10
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:55:04.807Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'd3f0465b-ccb0-4656-b783-b9801b005b64',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------937134019351181612806906',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 97
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:55:10.126Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'cc6ff9cc-787d-4572-b21c-d8025e59eda7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '89'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 33
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:55:23.795Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'de5d1029-b56b-43a4-8b18-328d1b3f1ca1',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 37
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T18:57:12.060Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/nutritional/store',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '13241cc5-9f8a-42a8-ad11-baa697816d23',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '42'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/nutritional/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 40
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/nutritional/store',
+  timestamp: '2023-06-12T18:57:38.780Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '682cda3a-8f0c-42ba-bcb5-7743db9f6277',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 21
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T18:57:43.970Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '78e4deba-c4fe-4e10-b997-562890ae867e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------638352301005308795249036',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 108
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:57:51.952Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'da44c49e-239d-4ebf-89f0-3b1a0253c8bd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 20
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T18:58:03.530Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '632d3ff2-57ad-4146-843c-5b19c0214ff0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '89'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 13
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:58:22.451Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '85e9a55f-63ef-409a-885f-4ae8a53e3249',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------003320404336625063202544',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 107
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T18:58:32.805Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'e61fd42b-8058-4847-8a5a-fb5b3f8cd0ac',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '90'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 10
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:58:37.362Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'fa7b9e81-f4a8-4957-803b-eb5a8791f2cd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '90'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T18:58:56.588Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '475cdd3d-6676-4a7f-882d-a51dc92338a5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 21
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T18:59:06.096Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2995cdf9-c0cb-4cf3-abd8-66a360439b63',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 37
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:00:16.083Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '119515d2-bb5a-4e7c-bcc6-620bfb51a878',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------313873287759568442030705',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 129
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:00:24.884Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f7444a0a-4f45-4962-bc1c-625efcd9001b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 20
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:00:33.728Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'd920683a-b16f-477f-99a5-0f422c9a3b7c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 33
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:01:28.904Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '63ed6ae4-dbf4-47f2-a016-7c5441a343c5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------679138610445782329037835',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 105
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:01:37.304Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ff77194a-7c64-42b0-9200-ac6b43bf5640',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 33
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:01:40.044Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '21c84aee-bbf7-4569-a983-71485d572774',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 33
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:02:02.470Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '784124b6-1690-48f4-8032-1d91c9c54caa',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 38
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:02:42.917Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '01569c6c-5b1d-44a1-a590-f2bdcfe477d7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------994135461225247778581103',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 117
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:02:46.104Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '4ded8185-770e-4aeb-b157-2158692a604b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 25
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:02:50.071Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '3932cc6b-4c9c-461b-842b-2f0bae234749',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------560867989245788622762979',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 113
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:03:38.226Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMGUzMTkyLTVkYzAtNDhiNS04NDZkLTg5MTBmNTAyN2I4OCIsImlhdCI6MTY4NjU5NTczNCwiZXhwIjoxNjg2NTk5MzM0fQ.HfeIuY7MeuYeiF2B6QvZuQfe-JPbJCjMCo-bncnrpc0',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '815df1dd-c420-4570-bbd1-da918b788768',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 43
+  },
+  level: 'error',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:03:41.421Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '84fdfad3-f6b0-44b3-a898-cd63d2b83e84',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '49'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 93
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/auth/login',
+  timestamp: '2023-06-12T19:05:20.762Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '8e750b0d-7d4d-4678-93ab-c4ba70387e97',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------550312310652172150991281',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 111
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:05:29.345Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '42327e86-a977-439e-ae80-636b8486cecd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '90'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 42
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/categoryingredient/store',
+  timestamp: '2023-06-12T19:05:37.420Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'f757b1b2-1176-4a0b-b2d0-483e77d41b99',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------562368182510224767324369',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 94
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:05:44.885Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/nutritional/store',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'c5d13455-b10a-4813-8c30-6933eb946a35',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'application/x-www-form-urlencoded',
+        'content-length': '42'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/nutritional/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 23
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/nutritional/store',
+  timestamp: '2023-06-12T19:05:57.792Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '44f375ca-e923-44f7-af0a-a492683e80c7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 88
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:06:23.297Z'
+}
+{
+  meta: {
+    req: {
+      url: '/addimage',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '1858b22d-3ea6-4c2e-a144-60208ec52683',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-type': 'multipart/form-data; boundary=--------------------------904315722427597441227178',
+        'content-length': '172583'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/addimage',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 115
+  },
+  level: 'info',
+  message: 'HTTP POST /addimage',
+  timestamp: '2023-06-12T19:07:14.515Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'b6440b5e-bfff-44d7-8ad6-0b9f2799f02f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '392'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 30
+  },
+  level: 'warn',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:07:20.729Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '2e7f3688-978d-4021-9701-ba199bf42ec6',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '394'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 64
+  },
+  level: 'info',
+  message: 'HTTP POST /dashboard/ingredient/store',
+  timestamp: '2023-06-12T19:07:29.286Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/e66f3ab5-19f4-4622-bad8-722174be7b93',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'ada927ef-917b-4047-83c2-b5b613822480',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '399'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/e66f3ab5-19f4-4622-bad8-722174be7b93',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 36
+  },
+  level: 'warn',
+  message: 'HTTP PUT /dashboard/ingredient/e66f3ab5-19f4-4622-bad8-722174be7b93',
+  timestamp: '2023-06-12T19:09:01.707Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/f6dd15a2-a059-422d-984e-38a38a658bc1',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkZGNkNDliLTY0MGUtNDRhMC05ODNmLWNmZWRmM2I2ZTJlNiIsImlhdCI6MTY4NjU5NjcyMCwiZXhwIjoxNjg2NjAwMzIwfQ.HjyMjyDNNOA2OjdbOuL-ji97K4Hu-m-nVEYsucGIS0A',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': 'fd2d5dd8-90ef-41dc-9e36-7f160b09da87',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '399'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/f6dd15a2-a059-422d-984e-38a38a658bc1',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 98
+  },
+  level: 'info',
+  message: 'HTTP PUT /dashboard/ingredient/f6dd15a2-a059-422d-984e-38a38a658bc1',
+  timestamp: '2023-06-12T19:11:15.522Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '1589c2e3-dcbb-4469-8fa5-5bf774a898cb',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/ingredient',
+  timestamp: '2023-06-12T19:13:17.160Z'
+}
+{
+  meta: {
+    req: {
+      url: '/dashboard/ingredient/3d8e3ce2-9d30-42f0-a1ef-b8d1f721fd81',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        'postman-token': '6483be52-de12-4477-b32d-46d0be8c3b57',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/3d8e3ce2-9d30-42f0-a1ef-b8d1f721fd81',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 26
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/ingredient/3d8e3ce2-9d30-42f0-a1ef-b8d1f721fd81',
+  timestamp: '2023-06-12T19:14:04.435Z'
+}

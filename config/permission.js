@@ -7,6 +7,7 @@ module.exports=[
     "nutritional",
     "recipe",
     "unit",
-    "accept"
+    "accept",
+    "categoryingredient"
 
 ];

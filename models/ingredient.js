@@ -18,6 +18,8 @@ module.exports = (sequelize, DataTypes) => {
       ingredient.belongsToMany(models.order,{through:"orderitem",foreignKey:"ingredient_id",otherKey:"order_id"})      
       
       ingredient.belongsTo(models.unit,{foreignKey:"unit_id"}) 
+      ingredient.belongsTo(models.category1,{foreignKey:"category_id"}) 
+
       ingredient.hasMany(models.wishlist,{foreignKey:"ingredient_id"})
       ingredient.hasMany(models.grocery,{foreignKey:"ingredient_id"})
   
@@ -62,6 +64,19 @@ module.exports = (sequelize, DataTypes) => {
       },
 
     },
+    category_id:{
+
+      type:DataTypes.UUID,
+      allowNull:false,
+      references:{
+          model:"category1s",
+          key:"id"
+          
+      },
+      onDelete:"cascade",
+      onUpdate:"cascade"
+
+    },
     price_by:{
 
       type:DataTypes.DOUBLE,
@@ -76,7 +91,7 @@ module.exports = (sequelize, DataTypes) => {
 
       attributes:{
 
-        exclude:["unit_id"]
+        exclude:["unit_id","category_id"]
       }
 
     },

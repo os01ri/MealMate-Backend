@@ -7,7 +7,7 @@ exports.sendemail=async(req,res,next)=>{
     try{
 
         let email=req.body.email;
-        let code=util.randomString();
+        let code=util.randomcode();
         await db.user.update({code},{where:{email}})
         let user=await db.user.findOne({where:{email}});
         let token=await util.generateToken(user.id,process.env.USER_RESET_TOKEN_KEY,process.env.USER_RESET_PASSWORD);        
