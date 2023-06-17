@@ -64891,3 +64891,171 @@
   message: 'HTTP DELETE /user/unlikerecipe/1/destroy',
   timestamp: '2023-06-16T21:30:06.622Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&nutritionals=[1]',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'a7530bc4-d4c7-43d7-9082-a666e8fc9af5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&nutritionals=[1]',
+      query: { category: '1', nutritionals: '[1]' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 46
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&nutritionals=[1]',
+  timestamp: '2023-06-17T09:40:34.533Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '9ef8b34a-0e3d-4311-9dfc-1ce1d7f21179',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 26
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index',
+  timestamp: '2023-06-17T09:40:57.707Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '919d8d8a-2d58-41ea-bc79-9691ae8bb4ab',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 28
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index',
+  timestamp: '2023-06-17T09:41:02.773Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'ff81719a-06d4-4414-a20d-e63104190664',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 10
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-17T09:41:06.197Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&nutritionals=[1]',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'd1984638-b067-42fa-8e08-d98704f2c0d3',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&nutritionals=[1]',
+      query: { category: '1', nutritionals: '[1]' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 8
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&nutritionals=[1]',
+  timestamp: '2023-06-17T09:41:09.016Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '1d0a6d2e-3b75-4ce6-956b-751f0c368337',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 30
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-17T09:42:04.091Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'dd5df636-a5ef-4036-a102-ac2c5085f776',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-17T09:42:08.588Z'
+}
