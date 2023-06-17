@@ -10,24 +10,32 @@ module.exports = {
         type: Sequelize.INTEGER
       },
 
-      user_id:{
+      user_id: {
 
-        type:Sequelize.UUID,
-        allowNull:true,
-        references:{
-            model:"users",
-            key:"id"
-            
+        type: Sequelize.INTEGER,
+        allowNull: true,
+        references: {
+          model: "users",
+          key: "id"
+
         },
 
       },
-      totalPrice:{
-        
-          type:Sequelize.DOUBLE,
-          allowNull:true,                  
+      totalPrice: {
+
+        type: Sequelize.DOUBLE,
+        allowNull: true,
 
       },
-      
+
+      status: {
+
+
+        type: Sequelize.INTEGER,
+        defaultValue: 1
+
+      },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

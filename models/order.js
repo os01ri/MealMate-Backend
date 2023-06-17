@@ -10,16 +10,16 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      order.belongsToMany(models.ingredient,{through:"orderitem",foreignKey:"order_id",otherKey:"ingredient_id"})      
-      order.hasMany(models.orderitem,{foreignKey:"order_id"})
-      order.belongsTo(models.user,{foreignKey:"user_id"})
+      order.belongsToMany(models.ingredient, { through: "orderitem", foreignKey: "order_id", otherKey: "ingredient_id" })
+      order.hasMany(models.orderitem, { foreignKey: "order_id" })
+      order.belongsTo(models.user, { foreignKey: "user_id" })
     }
   }
 
-  
-  order.prototype.toJSON=function(){
 
-    const values=this.get();
+  order.prototype.toJSON = function () {
+
+    const values = this.get();
     delete values.updatedAt;
     delete values.user_id;
     return values;
@@ -34,24 +34,31 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER
     },
 
-    user_id:{
+    user_id: {
 
-      type:DataTypes.UUID,
-      allowNull:true,
-      references:{
-          model:"users",
-          key:"id"
-          
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: "users",
+        key: "id"
+
       },
 
     },
-    totalPrice:{
-      
-        type:DataTypes.DOUBLE,
-        allowNull:true,                  
+    totalPrice: {
+
+      type: DataTypes.DOUBLE,
+      allowNull: true,
 
     },
-    
+
+    status: {
+
+      type: DataTypes.INTEGER,
+      defaultValue: 1
+
+    },
+
     createdAt: {
       allowNull: false,
       type: DataTypes.DATE
@@ -60,11 +67,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.DATE
     }
-    
+
   }, {
     sequelize,
     modelName: 'order',
-    timestamps:true
+    timestamps: true
   });
   return order;
 };

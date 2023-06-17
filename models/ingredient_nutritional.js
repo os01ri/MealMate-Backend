@@ -11,79 +11,79 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
-      ingredient_nutritional.belongsTo(models.unit,{foreignKey:"unit_id"})
+
+      ingredient_nutritional.belongsTo(models.unit, { foreignKey: "unit_id" })
     }
   }
   ingredient_nutritional.init({
-  
-    id:{
 
-        type:DataTypes.INTEGER,
-        autoIncrement:true,
-        allowNull:false,
-        primaryKey:true
+    id: {
+
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      allowNull: false,
+      primaryKey: true
     },
-    ingredient_id:{
+    ingredient_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
-      references:{
-          model:"Ingredients",
-          key:"id"
-          
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Ingredients",
+        key: "id"
+
       },
-      onUpdate:"cascade",
-      onDelete:"cascade"
+      onUpdate: "cascade",
+      onDelete: "cascade"
     },
-    
-    nutritional_id:{
 
-      type:DataTypes.UUID,
-      allowNull:false,
-      references:{
-          model:"Nutritionals",
-          key:"id"
-          
+    nutritional_id: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Nutritionals",
+        key: "id"
+
       },
-      onUpdate:"cascade",
-      onDelete:"cascade"
+      onUpdate: "cascade",
+      onDelete: "cascade"
     },
-    value:{
-      type:DataTypes.INTEGER,
-      allowNull:false
-      ,defaultValue:0
+    value: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+      , defaultValue: 0
     },
-        
-    unit_id:{
 
-      type:DataTypes.INTEGER,
-      allowNull:false,
-      references:{
-          model:"Units",
-          key:"id"
-          
+    unit_id: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Units",
+        key: "id"
+
       },
 
     },
 
-    
-    precent:{
 
-      type:DataTypes.INTEGER,
-      allowNull:false
+    precent: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false
 
     },
-    
-    
-  
+
+
+
   }, {
     sequelize,
     modelName: 'ingredient_nutritional',
-    timestamps:false,
-    defaultScope:{
+    timestamps: false,
+    defaultScope: {
 
-      include:db.unit
+      include: db.unit
 
     }
   });

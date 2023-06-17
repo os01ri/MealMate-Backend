@@ -1,0 +1,20 @@
+exports.adminresource = (admin) => {
+
+
+
+    return {
+
+
+
+
+
+    };
+
+
+
+
+
+
+
+
+}

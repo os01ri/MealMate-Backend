@@ -15,36 +15,36 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   recipe_ingredient.init({
-    
-    id:{
 
-      type:DataTypes.UUID,
-      defaultValue:DataTypes.UUIDV4,
-      allowNull:false,
-      primaryKey:true
-    },
-    recipe_id:{
+    id: {
 
-        type:DataTypes.UUID,
-        allowNull:false
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    ingredient_id:{
+    recipe_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
-    quantity:{
+    ingredient_id: {
 
-      type:DataTypes.DOUBLE,
-      allowNull:false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
-    unit_id:{
-      type:DataTypes.INTEGER,
-      allowNull:false,
-      references:{
-          model:"Units",
-          key:"id"
-          
+    quantity: {
+
+      type: DataTypes.DOUBLE,
+      allowNull: false
+    },
+    unit_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Units",
+        key: "id"
+
       },
 
     },
@@ -52,14 +52,14 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'recipe_ingredient',
-    timestamps:false,
-    defaultScope:{
+    timestamps: false,
+    defaultScope: {
 
-      attributes:{
+      attributes: {
 
-        exclude:["recipe_id","ingredient_id"]
+        exclude: ["recipe_id", "ingredient_id"]
       },
-      include:[db.unit]
+      include: [db.unit]
 
     }
   });

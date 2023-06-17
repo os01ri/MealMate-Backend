@@ -3,52 +3,64 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('users', {
-      id:{
+      id: {
 
-        type:Sequelize.UUID,
-        allowNull:false,        
-        primaryKey:true,
-        defaultValue:Sequelize.UUIDV4
-    },
-    name:{
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
+      },
+      name: {
 
-        type:Sequelize.STRING,
-        allowNull:false
-    },
-    email:{
+        type: Sequelize.STRING,
+        allowNull: false
+      },
 
-        type:Sequelize.STRING,
-        allowNull:false,
-        unique:true
-    },
-    code:{
+      username: {
 
-        type:Sequelize.STRING,
-        allowNull:true
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      email: {
 
-    },
-    password:{
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
+      },
+      code: {
 
-        type:Sequelize.STRING,
-        allowNull:false,
-        
-        set(value){
+        type: Sequelize.STRING,
+        allowNull: true
 
-            this.setDataValue("password",bcrypt.hashSync(value,10));
+      },
+      password: {
+
+        type: Sequelize.STRING,
+        allowNull: false,
+
+        set(value) {
+
+          this.setDataValue("password", bcrypt.hashSync(value, 10));
         },
-        
 
-    },
-    logo:{
 
-        type:Sequelize.STRING,
-        allowNull:true
-    },
-    status:{
+      },
+      logo: {
 
-      type:Sequelize.BOOLEAN,
-      defaultValue:false
-  },
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+
+      hash: {
+
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      status: {
+
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
+      },
     });
   },
   async down(queryInterface, Sequelize) {

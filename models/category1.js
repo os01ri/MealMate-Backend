@@ -11,34 +11,42 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      category1.hasMany(models.ingredient,{foreignKey:"category_id"})
-    
+      category1.hasMany(models.ingredient, { foreignKey: "category_id" })
+
     }
   }
   category1.init({
-    id:{
+    id: {
 
-      type:DataTypes.UUID,
-      defaultValue:DataTypes.UUIDV4,
-      allowNull:false,
-      primaryKey:true
-  },
-  name:{
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    name: {
 
-      type:DataTypes.STRING,
-      allowNull:false,
-      unique:true
-  },
-  url:{
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
+    },
+    url: {
 
-      type:DataTypes.STRING,
-      allowNull:true
+      type: DataTypes.STRING,
+      allowNull: true
 
-  }
+    },
+    hash: {
+
+      type: DataTypes.STRING,
+      allowNull: true
+
+    }
+
+
   }, {
     sequelize,
     modelName: 'category1',
-    timestamps:false
+    timestamps: false
   });
   return category1;
 };

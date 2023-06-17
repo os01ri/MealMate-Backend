@@ -10,58 +10,58 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
-      step.belongsTo(models.recipe,{foreignKey:"recipe_id"})
+
+      step.belongsTo(models.recipe, { foreignKey: "recipe_id" })
     }
   }
   step.init({
-   
-    id:{
 
-        type:DataTypes.UUID,
-        defaultValue:DataTypes.UUIDV4,
-        allowNull:false,
-        primaryKey:true
+    id: {
+
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    name:{
+    name: {
 
-        type:DataTypes.STRING,
-        allowNull:false
+      type: DataTypes.STRING,
+      allowNull: false
     },
-    rank:{
+    rank: {
 
-        type:DataTypes.INTEGER,
-        allowNull:false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
 
-    description:{
+    description: {
 
-      type:DataTypes.INTEGER,
-      allowNull:false
-  },
-    recipe_id:{
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    recipe_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
-      references:{
-          model:"recipe",
-          key:"id"
-          
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "recipe",
+        key: "id"
+
       },
-      onUpdate:"cascade",
-      onDelete:"cascade"
+      onUpdate: "cascade",
+      onDelete: "cascade"
 
     }
 
   }, {
     sequelize,
     modelName: 'step',
-    timestamps:false,
-    defaultScope:{
+    timestamps: false,
+    defaultScope: {
 
-      attributes:{
+      attributes: {
 
-        exclude:["recipe_id"]
+        exclude: ["recipe_id"]
       }
     }
   });

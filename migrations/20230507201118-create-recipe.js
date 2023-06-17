@@ -3,80 +3,87 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('recipes', {
-      
-      id:{
 
-          type:Sequelize.UUID,
-          defaultValue:Sequelize.UUIDV4,
-          allowNull:false,
-          primaryKey:true
+      id: {
+
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
       },
-      name:{
+      name: {
 
-          type:Sequelize.STRING,
-          allowNull:false,
-          unique:true
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
       },
-      description:{
+      description: {
 
-          type:Sequelize.STRING,
-          allowNull:false
+        type: Sequelize.STRING,
+        allowNull: false
       },
-      time:{
+      time: {
 
-          type:Sequelize.STRING,
-          allowNull:false
+        type: Sequelize.STRING,
+        allowNull: false
       },
-      url:{
+      url: {
 
-        type:Sequelize.STRING,
-        allowNull:true
-
-      },
-      status:{
-
-        type:Sequelize.BOOLEAN,
-        allowNull:true,
-        defaultValue:false
+        type: Sequelize.STRING,
+        allowNull: true
 
       },
 
-      user_id:{
+      hash: {
 
-        type:Sequelize.UUID,
-        allowNull:true,
-        references:{
-            model:"users",
-            key:"id"
-            
+        type: Sequelize.STRING,
+        allowNull: true
+
+      },
+      status: {
+
+        type: Sequelize.BOOLEAN,
+        allowNull: true,
+        defaultValue: false
+
+      },
+
+      user_id: {
+
+        type: Sequelize.INTEGER,
+        allowNull: true,
+        references: {
+          model: "users",
+          key: "id"
+
         },
 
       },
-      type_id:{
+      type_id: {
 
-        type:Sequelize.UUID,
-        allowNull:false,
-        references:{
-            model:"types",
-            key:"id"
-            
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "types",
+          key: "id"
+
         },
-        onUpdate:"cascade",
-        onDelete:"cascade"
-  
+        onUpdate: "cascade",
+        onDelete: "cascade"
+
       },
-  
-      category_id:{
-        type:Sequelize.UUID,
-        allowNull:false,
-        references:{
-            model:"categories",
-            key:"id"          
+
+      category_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "categories",
+          key: "id"
         },
-        onUpdate:"cascade",
-        onDelete:"cascade"
+        onUpdate: "cascade",
+        onDelete: "cascade"
       },
-  
+
 
 
     });

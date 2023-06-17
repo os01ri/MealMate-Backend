@@ -10,94 +10,101 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
-      recipe.belongsTo(models.category,{foreignKey:"category_id"})
-      recipe.belongsTo(models.type,{foreignKey:"type_id"})
-      recipe.belongsTo(models.user,{foreignKey:"user_id"})
 
-      recipe.hasMany(models.step,{foreignKey:"recipe_id"})
-      recipe.belongsToMany(models.ingredient,{through:"recipe_ingredient",foreignKey:"recipe_id",otherKey:"ingredient_id"})
+      recipe.belongsTo(models.category, { foreignKey: "category_id" })
+      recipe.belongsTo(models.type, { foreignKey: "type_id" })
+      recipe.belongsTo(models.user, { foreignKey: "user_id" })
+
+      recipe.hasMany(models.step, { foreignKey: "recipe_id" })
+      recipe.belongsToMany(models.ingredient, { through: "recipe_ingredient", foreignKey: "recipe_id", otherKey: "ingredient_id" })
     }
   }
   recipe.init({
-    
-    id:{
 
-        type:DataTypes.UUID,
-        defaultValue:DataTypes.UUIDV4,
-        allowNull:false,
-        primaryKey:true
+    id: {
+
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    name:{
+    name: {
 
-        type:DataTypes.STRING,
-        allowNull:false,
-        unique:true
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
-    description:{
+    description: {
 
-        type:DataTypes.INTEGER,
-        allowNull:false
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
-    time:{
+    time: {
 
-        type:DataTypes.STRING,
-        allowNull:false
+      type: DataTypes.STRING,
+      allowNull: false
     },
-    url:{
+    url: {
 
-      type:DataTypes.STRING,
-      allowNull:true
-
-    },
-    status:{
-
-      type:DataTypes.BOOLEAN,
-      allowNull:true,
-      defaultValue:false
+      type: DataTypes.STRING,
+      allowNull: true
 
     },
 
-    type_id:{
+    hash: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
-      references:{
-          model:"type",
-          key:"id"
-          
+      type: DataTypes.STRING,
+      allowNull: true
+
+    },
+    status: {
+
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+
+    },
+
+    type_id: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "type",
+        key: "id"
+
       },
-      onUpdate:"cascade",
-      onDelete:"cascade"
+      onUpdate: "cascade",
+      onDelete: "cascade"
 
     },
 
-    user_id:{
+    user_id: {
 
-      type:DataTypes.UUID,
-      allowNull:true,
-      references:{
-          model:"user",
-          key:"id"
-          
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: "user",
+        key: "id"
+
       },
 
     },
-    category_id:{
-      type:DataTypes.UUID,
-      allowNull:false,
-      references:{
-          model:"category",
-          key:"id"          
+    category_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "category",
+        key: "id"
       },
-      onUpdate:"cascade",
-      onDelete:"cascade"
+      onUpdate: "cascade",
+      onDelete: "cascade"
     },
 
   }, {
     sequelize,
     modelName: 'recipe',
-    timestamps:false
+    timestamps: false
   });
   return recipe;
 };

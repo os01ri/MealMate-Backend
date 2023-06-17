@@ -3,31 +3,32 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('roles', {
-      
-      id:{
-          type:Sequelize.UUID,
-          defaultValue:Sequelize.UUIDV4,
-          allowNull:false,
-          primaryKey:true
+
+      id: {
+
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
       },
-      
-      name:{
 
-          type:Sequelize.STRING,
-          allowNull:false
+      name: {
+
+        type: Sequelize.STRING,
+        allowNull: false
       },
-      permission:{
+      permission: {
 
-          allowNull:false,
-          type:Sequelize.TEXT,
-          set(value){
-              this.setDataValue("permission",JSON.stringify(value));
-          },
+        allowNull: false,
+        type: Sequelize.TEXT,
+        set(value) {
+          this.setDataValue("permission", JSON.stringify(value));
+        },
 
-          get(){
+        get() {
 
-              return JSON.parse(this.getDataValue("permission"));
-          }
+          return JSON.parse(this.getDataValue("permission"));
+        }
       }
 
 

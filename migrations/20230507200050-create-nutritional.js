@@ -3,21 +3,21 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('nutritionals', {
-      id:{
+      id: {
 
-        type:Sequelize.UUID,
-        defaultValue:Sequelize.UUIDV4,
-        allowNull:false,
-        primaryKey:true
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
       },
-      name:{
-  
-        type:Sequelize.STRING,
-        allowNull:false,
-        unique:true
-      }  
-    
-  
+      name: {
+
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
+      }
+
+
     });
   },
   async down(queryInterface, Sequelize) {

@@ -10,15 +10,15 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      unit.hasMany(models.ingredient,{foreignKey:"unit_id"})
-      unit.hasMany(models.ingredient_nutritional,{foreignKey:"unit_id"})
-      unit.hasMany(models.grocery,{foreignKey:"unit_id"})
-      unit.hasMany(models.orderitem,{foreignKey:"unit_id"})
+      unit.hasMany(models.ingredient, { foreignKey: "unit_id" })
+      unit.hasMany(models.ingredient_nutritional, { foreignKey: "unit_id" })
+      unit.hasMany(models.grocery, { foreignKey: "unit_id" })
+      unit.hasMany(models.orderitem, { foreignKey: "unit_id" })
 
     }
   }
   unit.init({
-    
+
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -27,19 +27,19 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: {
       type: DataTypes.STRING,
-      unique:true,
-      allowNull:false
+      unique: true,
+      allowNull: false
     },
     code: {
       type: DataTypes.STRING,
-      unique:true,
-      allowNull:false
+      unique: true,
+      allowNull: false
     }
-    
+
   }, {
     sequelize,
     modelName: 'unit',
-    timestamps:false
+    timestamps: false
   });
   return unit;
 };

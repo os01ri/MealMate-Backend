@@ -3,28 +3,48 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('wishlists', {
-      
-      id:{
 
-        type:Sequelize.UUID,
-        allowNull:false,        
-        primaryKey:true,
-        defaultValue:Sequelize.UUIDV4
+      id: {
+
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        allowNull: false,
+        primaryKey: true
       },
-      user_id:{
+      user_id: {
 
-        type:Sequelize.UUID,
-        allowNull:false,
-
-      },
-  
-      ingredient_id:{
-
-        type:Sequelize.UUID,
-        allowNull:false,
+        type: Sequelize.INTEGER,
+        allowNull: false,
 
       },
-    
+
+      ingredient_id: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+
+      },
+
+
+      is_favorite: {
+
+        type: Sequelize.INTEGER,
+        defaultValue: 1
+
+      },
+
+
+
+    }, {
+
+      uniqueKeys: {
+
+        unique_tag: {
+
+          fields: ["ingredient_id", "user_id"]
+        }
+
+      }
 
 
     });

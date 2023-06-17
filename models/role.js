@@ -10,43 +10,44 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
-      this.hasMany(models.admin,{foreignKey:"role_id"})
+
+      this.hasMany(models.admin, { foreignKey: "role_id" })
 
     }
   }
   role.init({
-    id:{
-        type:DataTypes.UUID,
-        defaultValue:DataTypes.UUIDV4,
-        allowNull:false,
-        primaryKey:true
+    id: {
+
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    
-    name:{
 
-        type:DataTypes.STRING,
-        allowNull:false
+    name: {
+
+      type: DataTypes.STRING,
+      allowNull: false
     },
-    permission:{
+    permission: {
 
-        allowNull:false,
-        type:DataTypes.TEXT,
-        set(value){
-            this.setDataValue("permission",JSON.stringify(value));
-        },
+      allowNull: false,
+      type: DataTypes.TEXT,
+      set(value) {
+        this.setDataValue("permission", JSON.stringify(value));
+      },
 
-        get(){
+      get() {
 
-            return JSON.parse(this.getDataValue("permission"));
-        }
+        return JSON.parse(this.getDataValue("permission"));
+      }
     }
 
 
   }, {
     sequelize,
     modelName: 'role',
-    timestamps:false
+    timestamps: false
   });
   return role;
 };

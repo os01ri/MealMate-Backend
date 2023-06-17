@@ -1,39 +1,47 @@
 'use strict';
-const {Model} = require('sequelize');
+const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class type extends Model {
 
     static associate(models) {
       // define association here
-      type.hasMany(models.recipe,{foreignKey:"type_id"})
+      type.hasMany(models.recipe, { foreignKey: "type_id" })
     }
   }
   type.init({
 
-    id:{
+    id: {
 
-        type:DataTypes.UUID,
-        defaultValue:DataTypes.UUIDV4,
-        allowNull:false,
-        primaryKey:true
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    name:{
+    name: {
 
-        type:DataTypes.STRING,
-        allowNull:false,
-        unique:true
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
     },
-    url:{
-      
-        type:DataTypes.STRING,
-        allowNull:true
+    url: {
+
+      type: DataTypes.STRING,
+      allowNull: true
+
+    },
+    hash: {
+
+      type: DataTypes.STRING,
+      allowNull: true
 
     }
+
+
 
   }, {
     sequelize,
     modelName: 'type',
-    timestamps:false
+    timestamps: false
   });
   return type;
 };

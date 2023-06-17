@@ -11,9 +11,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      grocery.belongsTo(models.ingredient,{foreignKey:"ingredient_id"})
-      grocery.belongsTo(models.unit,{foreignKey:"unit_id"}) 
-    
+      grocery.belongsTo(models.ingredient, { foreignKey: "ingredient_id" })
+      grocery.belongsTo(models.unit, { foreignKey: "unit_id" })
+
     }
   }
   grocery.init({
@@ -24,34 +24,34 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    quantity:{
+    quantity: {
       type: DataTypes.DOUBLE,
       allowNull: false,
 
     },
 
-    user_id:{
+    user_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
+      type: DataTypes.INTEGER,
+      allowNull: false,
 
     },
-    unit_id:{
+    unit_id: {
 
-      type:DataTypes.INTEGER,
-      allowNull:false,
-      references:{
-          model:"Units",
-          key:"id"
-          
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Units",
+        key: "id"
+
       },
 
     },
 
-    ingredient_id:{
+    ingredient_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
+      type: DataTypes.INTEGER,
+      allowNull: false,
 
     },
 
@@ -60,11 +60,11 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'grocery',
-    timestamps:false,
-    defaultScope:{
+    timestamps: false,
+    defaultScope: {
 
-      attributes:{
-        exclude:["user_id","ingredient_id","unit_id"]
+      attributes: {
+        exclude: ["user_id", "ingredient_id", "unit_id"]
       }
     }
   });

@@ -11,46 +11,60 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-    
-      wishlist.belongsTo(models.ingredient,{foreignKey:"ingredient_id"});      
-    
+
+      wishlist.belongsTo(models.ingredient, { foreignKey: "ingredient_id" });
+
     }
 
   }
   wishlist.init({
-  
-    id:{
 
-      type:DataTypes.UUID,
-      allowNull:false,        
-      primaryKey:true,
-      defaultValue:DataTypes.UUIDV4
+    id: {
+
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    user_id:{
+    user_id: {
 
-      type:DataTypes.UUID,
-      allowNull:false,
-
-    },
-
-    ingredient_id:{
-
-      type:DataTypes.UUID,
-      allowNull:false,
+      type: DataTypes.INTEGER,
+      allowNull: false,
 
     },
-  
-    
-  
+
+    ingredient_id: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+
+    },
+
+    is_favorite: {
+
+      type: DataTypes.INTEGER,
+      defaultValue: 1
+
+    },
+
+
   }, {
     sequelize,
-    modelName: 'wishlist',
-    timestamps:false,
-    defaultScope:{
 
-      attributes:{
-        exclude:["user_id","ingredient_id"]
+    modelName: 'wishlist',
+    timestamps: false,
+    indexes: [{
+
+      unique: true,
+      fields: ["user_id", "ingredient_id"]
+
+    }],
+    defaultScope: {
+
+      attributes: {
+        exclude: ["user_id", "ingredient_id"]
       }
+
     }
   });
   return wishlist;

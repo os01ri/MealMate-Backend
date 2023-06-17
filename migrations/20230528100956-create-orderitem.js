@@ -11,49 +11,49 @@ module.exports = {
       },
       quantity: {
         type: Sequelize.DOUBLE,
-        allowNull:false
+        allowNull: false
       },
 
-      order_id:{
+      order_id: {
 
-        type:Sequelize.INTEGER,
-        allowNull:false,
-        references:{
-            model:"orders",
-            key:"id"
-            
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "orders",
+          key: "id"
+
         },
-        
-      },
-      unit_id:{
 
-        type:Sequelize.INTEGER,
-        allowNull:false,
-        references:{
-            model:"units",
-            key:"id"
-            
+      },
+      unit_id: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "units",
+          key: "id"
+
         },
-        
-      },
-      price:{
-
-
-        type:Sequelize.INTEGER,
-        allowNull:true,
-
 
       },
-      ingredient_id:{
+      price: {
 
-        type:Sequelize.UUID,
-        allowNull:false,
-        references:{
-            model:"ingredients",
-            key:"id"
-            
+
+        type: Sequelize.INTEGER,
+        allowNull: true,
+
+
+      },
+      ingredient_id: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: "ingredients",
+          key: "id"
+
         },
-        
+
       },
 
     });

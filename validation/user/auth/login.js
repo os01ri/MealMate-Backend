@@ -1,9 +1,9 @@
-const {check}=require("express-validator");
-const handleError=require("../../../util/helper");
-const exists=require("../../../role/exist");
+const { check } = require("express-validator");
+const handleError = require("../../../util/helper");
+const exists = require("../../../role/exist");
 
-exports.login=[
-    check("email").exists().withMessage("email is require").isEmail().withMessage("email field should be email").custom(exists("user","email")),
+exports.login = [
+    check("username").exists().withMessage("username is require").custom(exists("user", "username")),
     check("password").exists().withMessage("password is required"),
     handleError.handleValidation
 
