@@ -5,7 +5,7 @@ const unique = require("../../../role/unique");
 
 exports.store = [
 
-    check("name").exists().withMessage("name is required").custom(unique("admin", "name")),
+    check("name").exists().withMessage("name is required"),
     check("username").exists().withMessage("username is required").custom(unique("admin", "username")),
 
     check("email").exists().withMessage("email is require").isEmail().withMessage("this field should be email").custom(unique("admin", "email")),
