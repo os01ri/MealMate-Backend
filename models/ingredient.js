@@ -1,6 +1,6 @@
 'use strict';
 const {
-  Model
+  Model, Op
 } = require('sequelize');
 const { Sequelize } = require('.');
 const db = require('.');
@@ -148,27 +148,49 @@ module.exports = (sequelize, DataTypes) => {
       //   }
       // },
 
+      unlikeuser(ids) {
 
-      // name(name) {
+        console.log(...ids)
+        return {
 
-      //   if (name != undefined) {
+          where: {
 
-      //     return {
-
-      //       where: {
-      //         name: {
-
-      //           [Sequelize.Op.eq]: `name`
-      //         }
-      //       }
-
-      //     }
-
-      //   }
-      //   return {}
+            id: {
 
 
-      // }
+              [Op.ne]: ids
+
+            }
+
+
+          }
+
+        }
+
+
+      },
+
+      name(name) {
+
+        console.log(name)
+        if (name) {
+
+          return {
+
+            where: {
+              name: {
+
+                [Op.like]: `%${name}%`
+              }
+            }
+
+          }
+
+        }
+        return {}
+
+
+      }
 
     },
     timestamps: false

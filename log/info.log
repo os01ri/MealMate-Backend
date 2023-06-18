@@ -65059,3 +65059,1423 @@
   message: 'HTTP GET /user/ingredient/index?category=1',
   timestamp: '2023-06-17T09:42:08.588Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '17cd27c4-351b-43d1-9741-894af635d2fe',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '33'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 117
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-06-18T09:36:55.438Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/1/show',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '916a8523-5ff9-45e1-b681-7c129f2b8b3e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/1/show',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 24
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/1/show',
+  timestamp: '2023-06-18T09:37:09.700Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&nutritionals=[1]',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '70896b9d-d69e-4315-902b-9c820501bb12',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&nutritionals=[1]',
+      query: { category: '1', nutritionals: '[1]' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&nutritionals=[1]',
+  timestamp: '2023-06-18T09:37:13.104Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'b1b1f438-013e-4aa3-ba18-687c485b77e3',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=1',
+      query: { category: '1', name: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=1',
+  timestamp: '2023-06-18T09:37:18.789Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'a6c0cd41-a1b9-462f-897e-934c9f6f9aa0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=1',
+      query: { category: '1', name: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 41
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=1',
+  timestamp: '2023-06-18T09:37:27.822Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '708319c4-5d08-4cc2-a2a4-23a7d5f0f949',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=1',
+      query: { category: '1', name: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 29
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=1',
+  timestamp: '2023-06-18T09:45:40.600Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '5713153f-b301-4313-8659-9fabe8b7d531',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:45:49.242Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '883a78d3-792c-4689-bf04-510ac19358e7',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 6
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:45:56.850Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'a35852b1-3aa7-40d7-b957-0cab4d80fb91',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 40
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:46:19.808Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'f0c3329c-04ad-4c9e-9978-92e64c741b1b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 10
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:46:23.711Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=t',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '8ca4a9f7-f030-4ddb-b9bf-7a82880ee87b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=t',
+      query: { category: '1', name: 't' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 5
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=t',
+  timestamp: '2023-06-18T09:46:29.228Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '70e4ff4a-cdd7-4629-93ac-3d364cf3fb28',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 8
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:46:32.514Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '845cee9b-202f-4df3-8624-aa22764a270a',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 65
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:46:51.367Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '0b104dda-ad7a-4f05-b3ef-06cf17ce99db',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 29
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:47:10.164Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=t',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'f58c77d2-a39b-42d8-8c0a-2a60729d7984',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=t',
+      query: { category: '1', name: 't' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 8
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=t',
+  timestamp: '2023-06-18T09:47:16.426Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=t',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '089f236e-990f-447b-8484-8dcab287030e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=t',
+      query: { category: '1', name: 't' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 40
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=t',
+  timestamp: '2023-06-18T09:47:38.425Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '6c039b80-1b5f-4dd2-bcfb-41279362bf8e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 30
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:48:35.456Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'eeba5f6f-46f8-4586-95b0-27dab58ed6e3',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:48:40.335Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '3ce70b2a-6bfb-4726-8205-dc7eca3911fd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1',
+      query: { category: '1' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 30
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1',
+  timestamp: '2023-06-18T09:48:51.653Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '7a983099-cc74-4621-b537-40071b94611b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 19
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:48:55.883Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '854871a9-c49d-454d-96c2-7ee26cbbe4cb',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 6
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:00.517Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '8c779931-8162-4610-a929-eda7dea4536b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 28
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:10.254Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '68dd7a8d-24b9-433a-9e3c-69111434c16a',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 29
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:19.206Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '73ced3a9-c15f-4c19-b921-16f9a53f975a',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 28
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:38.168Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '68423dbb-edb1-4417-af71-821cc173e86f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 28
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:47.351Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '137b2a73-ee4b-4685-aa04-38dfe844fb85',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 34
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:49:58.550Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '58feb03f-0590-450d-acdb-8fcd428adce0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 31
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:50:03.158Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '4ac1f075-df33-4f3a-882f-586fc0dc9d8c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 39
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:50:06.502Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '22c6485f-95f1-41ed-970c-d2f05de48d78',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 33
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:50:12.348Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '587a976a-ef1c-471c-bbdf-f37f0bc4f1c0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 43
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:50:16.952Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'e5bc7a71-c8ce-419e-a713-d7cdb6c1ec14',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 49
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:53:33.125Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=to',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'af380597-c863-448f-9432-867d2ddb9ff9',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=to',
+      query: { category: '1', name: 'to' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 34
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=to',
+  timestamp: '2023-06-18T09:53:47.997Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=toa',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '8976d3d3-5646-47ea-8df7-7e621305927c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=toa',
+      query: { category: '1', name: 'toa' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 9
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=toa',
+  timestamp: '2023-06-18T09:53:53.425Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=m',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'e245dab7-3c91-429b-a4e3-463d999cb433',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=m',
+      query: { category: '1', name: 'm' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=m',
+  timestamp: '2023-06-18T09:54:00.020Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'a7e4535f-25b0-4cb4-a92c-5407d5d512c5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T09:54:04.731Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '3ab856b0-9ea2-41c0-8eaa-18cc20de530d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 44
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T09:54:09.933Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '3fef1945-1dc4-435b-9c4d-88858b278b9e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 401 },
+    responseTime: 3
+  },
+  level: 'warn',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T10:08:45.409Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTUwNjQ0LCJleHAiOjE2ODY5NTQyNDR9.oENZGHq7oejZV5RzZDhfZPJmBP9H5EXgxyZkAynZFhQ',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '7ff91138-90ba-4754-b684-ba1d58d3032f',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 401 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T10:08:54.733Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '9aa695a1-25b5-40e0-be3d-b39ec0b2333e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '33'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 100
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-06-18T10:09:02.357Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTUwNjQ0LCJleHAiOjE2ODY5NTQyNDR9.oENZGHq7oejZV5RzZDhfZPJmBP9H5EXgxyZkAynZFhQ',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '52eb765a-7a49-4fea-8844-866bb8b09666',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 401 },
+    responseTime: 6
+  },
+  level: 'warn',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:13:43.619Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '2ee4ac2b-e29b-4b2b-ad9e-05782536c29d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '33'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 160
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-06-18T15:13:48.815Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg2OTUwNjQ0LCJleHAiOjE2ODY5NTQyNDR9.oENZGHq7oejZV5RzZDhfZPJmBP9H5EXgxyZkAynZFhQ',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '9cd4e2f7-fca7-414f-9a3d-1566fd4b6e0e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 401 },
+    responseTime: 1
+  },
+  level: 'warn',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:13:51.838Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '12b2c6d0-495b-4487-9394-2c763c9d26c4',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 53
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:14:28.977Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '7f15bc30-702b-45d6-9c5a-9272aeb35b57',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 45
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:14:56.788Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'f6088ca6-7e03-4085-b8b7-baa8e4692692',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 48
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:15:31.149Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '95825c4f-0898-40fa-960f-8cec2f268615',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 30
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:15:48.234Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'a1749158-a510-49a0-b0b6-93f96864efa8',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 15
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:16:01.213Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'c59f67b1-fa83-42f4-981b-33ed4e2c064e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 58
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:16:11.716Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/unlikeingredient/store',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '215dffef-c778-4c1a-ad57-dc238b595aee',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '15'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/unlikeingredient/store',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 48
+  },
+  level: 'info',
+  message: 'HTTP POST /user/unlikeingredient/store',
+  timestamp: '2023-06-18T15:16:57.111Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '2867e087-60c7-411b-9769-9959ebeef693',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 31
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:17:02.509Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'c8b66e80-f767-4e4c-8e1e-8b28b2a7012d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 58
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:17:07.417Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '46cba506-9b87-4ce0-beb5-ea53fe7e27cd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+      query: { category: '1', nutritionals: '[1]', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+  timestamp: '2023-06-18T15:17:12.446Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '199d5be4-10dc-4ac6-b264-ea26b7e6b4c9',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+      query: { category: '1', nutritionals: '[1]', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 56
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&nutritionals=[1]&name=ma',
+  timestamp: '2023-06-18T15:17:48.232Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '1972bb8d-5d58-404b-9d98-5bc301bfe2ab',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:18:02.246Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'c21de157-ac35-4f56-b1b8-f85edc9030c6',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 24
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:18:42.484Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '9dc2cda1-1555-4d17-8c7b-670fc3868906',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 49
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:19:19.077Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/unlikeingredient/1/destroy',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '1e38ce67-6f18-4f90-a9f6-0a3aabe9a729',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'DELETE',
+      httpVersion: '1.1',
+      originalUrl: '/user/unlikeingredient/1/destroy',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 10
+  },
+  level: 'info',
+  message: 'HTTP DELETE /user/unlikeingredient/1/destroy',
+  timestamp: '2023-06-18T15:19:25.966Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/index?category=1&name=ma',
+      headers: {
+        accept: 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjg3MTAxMjI4LCJleHAiOjE2ODcxMDQ4Mjh9.RpWAGkLDt9zz326sTni2tce4qcx6AmomuS_SRhhuAUo',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'b1fbd2c6-00ee-4896-8ade-b7aa04f0279b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/index?category=1&name=ma',
+      query: { category: '1', name: 'ma' }
+    },
+    res: { statusCode: 200 },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/index?category=1&name=ma',
+  timestamp: '2023-06-18T15:19:28.516Z'
+}
