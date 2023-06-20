@@ -12,7 +12,7 @@ exports.store = [
     check("password").exists().withMessage("password is required"),
     check("username").exists().withMessage("username is required").custom(unique("admin", "username")),
     check("role_id").exists().withMessage("role id is required").custom(exists("role", "id")),
-    check("logo").isURL().withMessage("image should be url").custom(exists("temp", "url")),
+    check("logo").withMessage("image should be url").custom(exists("temp", "url")),
 
     handleError.handleValidation
 

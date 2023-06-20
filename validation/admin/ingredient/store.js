@@ -12,7 +12,7 @@ exports.store = [
     check("unit_id").exists().withMessage("unit id is require").custom(exists("unit", "id")),
     check("category_id").exists().withMessage("category id is require").custom(exists("category1", "id")),
 
-    check("url").exists().isURL().withMessage("image should be url").withMessage("url is require").custom(exists("temp", "url")),
+    check("url").exists().withMessage("url is require").custom(exists("temp", "url")),
 
     check("nutritional.*.value").exists().withMessage("value id is require").isFloat({ min: 0 }).withMessage("value should be number"),
     check("nutritional.*.precent").exists().withMessage("precent id is require").isFloat({ min: 0, max: 100 }).withMessage("precent should be number"),
