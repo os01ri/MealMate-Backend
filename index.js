@@ -41,6 +41,14 @@ app.use((err, req, res, next) => {
 
     return res.status(500).json({ message: err.message })
 })
+
+
+process.on('uncaughtException', function (err) {
+
+
+
+
+});
 database.sync().then((result) => {
 
     app.listen(port, () => {
