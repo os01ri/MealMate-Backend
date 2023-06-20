@@ -67283,3 +67283,27 @@
   message: 'HTTP PUT /dashboard/categoryingredient/2/update?name=fdjksddddcd&url=http://localhost:5000/public/temp/60999491687236571756.png',
   timestamp: '2023-06-20T04:57:01.482Z'
 }
+{
+  meta: {
+    req: {
+      url: '/dashboard/categoryingredient/index',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '23537400-9951-4ff5-9f07-8970bdd10a94',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/categoryingredient/index',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 29
+  },
+  level: 'info',
+  message: 'HTTP GET /dashboard/categoryingredient/index',
+  timestamp: '2023-06-20T05:06:06.669Z'
+}

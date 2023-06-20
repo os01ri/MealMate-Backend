@@ -48,8 +48,9 @@ exports.getall = async (req, res) => {
 
 
     let categories = await db.category1.findAll({ include: [db.ingredient] })
+    let count = await db.category1.count()
 
-    return res.success(categories, "this is all categories")
+    return res.success({ categories, count }, "this is all categories")
 
 
 
