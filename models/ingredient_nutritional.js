@@ -80,7 +80,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'ingredient_nutritional',
-    // timestamps: false,
+    timestamps: false,
     defaultScope: {
 
       include: [db.unit],

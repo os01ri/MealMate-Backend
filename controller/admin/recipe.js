@@ -6,6 +6,8 @@ exports.store = async (req, res, next) => {
     let name = req.body.name;
     let description = req.body.description;
     let time = req.body.time;
+    let feeds = req.body.feeds;
+    // return res.success(feeds)
     let oldpath = req.body.url;
     let hash = await util.encodeImageToBlurhash(oldpath)
 
@@ -13,7 +15,7 @@ exports.store = async (req, res, next) => {
     let type_id = req.body.type_id;
     let category_id = req.body.category_id;
     let steps = req.body.step;
-    let recipe = await db.recipe.create({ name, description, time, url, type_id, category_id, steps, hash, status: true });
+    let recipe = await db.recipe.create({ name,feeds, description, time, url, type_id, category_id, steps, hash, status: true });
     steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description }))
     await db.step.bulkCreate(steps);
     let ingredient = req.body.ingredient;
@@ -120,6 +122,8 @@ exports.storeByUser = async (req, res, next) => {
 
     let name = req.body.name;
     let user_id = req.user.id;
+    let feeds = req.body.feeds;
+
     let description = req.body.description;
     let time = req.body.time;
     let oldpath = req.body.url;
@@ -128,7 +132,7 @@ exports.storeByUser = async (req, res, next) => {
     let type_id = req.body.type_id;
     let category_id = req.body.category_id;
     let steps = req.body.step;
-    let recipe = await db.recipe.create({ name, description, hash, time, url, type_id, user_id, category_id, steps, status: false });
+    let recipe = await db.recipe.create({ name,feeds, description, hash, time, url, type_id, user_id, category_id, steps, status: false });
     steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description }));
     await db.step.bulkCreate(steps);
     let ingredient = req.body.ingredient;

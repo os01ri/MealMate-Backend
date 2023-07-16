@@ -51,6 +51,13 @@ module.exports = (sequelize, DataTypes) => {
 
     },
 
+    feeds: {
+
+      type: DataTypes.INTEGER,
+      allowNull: true
+
+    },
+
     hash: {
 
       type: DataTypes.STRING,

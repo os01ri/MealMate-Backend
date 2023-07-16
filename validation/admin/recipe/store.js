@@ -8,6 +8,7 @@ const checkArrayExists = require("../../../role/checkArrayExists");
 exports.store = [
     check("name").exists().withMessage("name is require").custom(unique("recipe", "name")),
     check("description").exists().withMessage("description is require"),
+    check("feeds").exists().withMessage("feeds is require"),
     check("time").exists().withMessage("time is require").isNumeric().withMessage("time field should be time"),
     check("url").exists().withMessage("url is require").custom(exist("temp", "url")),
     check("type_id").exists().withMessage("type id is require").custom(exist("type", "id")),

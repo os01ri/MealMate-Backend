@@ -17,6 +17,11 @@ module.exports = {
         allowNull: false,
         unique: true
       },
+      
+      feeds: {
+
+        type: Sequelize.INTEGER,
+      },
       description: {
 
         type: Sequelize.STRING,
