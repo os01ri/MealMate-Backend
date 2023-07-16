@@ -1,7 +1,7 @@
 const path = require("path");
 const { validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
-const redis = require("../config/redis");
+// const redis = require("../config/redis");
 const fs = require("fs");
 const sharp = require("sharp");
 const { encode } = require("blurhash");
@@ -57,8 +57,8 @@ exports.generateToken = async (id, secret, time) => {
     if (secret != process.env.ADMIN_REFRESH_TOKEN_KEY) { //cache only token ... not refresh token
 
 
-        await redis.set(token, id);
-        await redis.expire(token, time);
+        // await redis.set(token, id);
+        // await redis.expire(token, time);
 
     }
     return token;
@@ -86,7 +86,7 @@ exports.logout = async (req) => {
 
 
     let token = req.get("Authorization").split(" ")[1];
-    await redis.del(token)
+    // await redis.del(token)
 }
 
 

@@ -34,8 +34,49 @@ exports.getall = async (req, res, next) => {
 exports.get = async (req, res, next) => {
 
     let id = req.params.id;
-    let recipes = await db.recipe.findByPk(id, { include: [db.type, db.category, db.ingredient, db.step], attributes: { exclude: ["type_id", "category_id"] } })
-    return res.success(recipes, "this is the recipe")
+    let recipes = await db.recipe.findByPk(id, { include: [db.type, db.category,{model:db.ingredient,include:[db.unit ],through: { attributes: ["quantity"] }}, db.step], attributes: { exclude: ["type_id", "category_id"] } })
+    let recipes1=await db.recipe.findByPk(id, { include: [{model:db.ingredient,include:[db.unit,{ model: db.nutritional, through: { attributes: ["value"] } }],through: { attributes: ["quantity"] }}], attributes: { exclude: ["type_id", "category_id"] } })
+
+    let ingredients=recipes1.ingredients;
+    let arr=[];
+    let sum=0;
+    for(let i=0;i<ingredients.length;i++){
+
+
+        sum+=(ingredients[i].price*ingredients[i].recipe_ingredient.quantity)/(ingredients[i].price_by);
+
+        for(let j=0;j<ingredients[i].nutritionals.length;j++){
+
+            
+            let index=arr.findIndex((value)=>value.id==ingredients[i].nutritionals[j].id);
+            if(index==-1){
+
+                arr.push(ingredients[i].nutritionals[j]);
+
+
+            }else{
+
+
+            let newvavlue=arr[index].ingredient_nutritionals.value+ingredients[i].nutritionals[j].ingredient_nutritionals.value;
+            let object={
+                id:arr[index].id,
+                name:arr[index].name,
+                ingredient_nutritionals:{
+
+                    value:newvavlue
+                }
+            }
+            arr[index]=object;
+
+            }
+
+            
+        }
+
+
+    }
+
+    return res.success({recipes,nutritionals:arr,sum}, "this is the recipe")
 
 }
 
@@ -100,7 +141,7 @@ exports.storeByUser = async (req, res, next) => {
 
 exports.getalluser = async (req, res, next) => {
 
-    let recipes = await db.recipe.findAll({ include: [db.type, db.category, db.ingredient, db.step], where: { status: true } })
+    let recipes = await db.recipe.findAll({ include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
     return res.success(recipes, "this is all recipes")
 
 
@@ -111,7 +152,7 @@ exports.getUserRecipe = async (req, res, next) => {
 
 
     let user_id = req.user.id;
-    let recipes = await db.recipe.findAll({ where: { user_id }, include: [db.type, db.category, db.step, db.ingredient] });
+    let recipes = await db.recipe.findAll({ where: { user_id }, include: [db.type, db.category, db.step, {model:db.ingredient}] });
 
     return res.success(recipes, "this is all recipe for you")
 

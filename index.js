@@ -49,6 +49,7 @@ process.on('uncaughtException', function (err) {
 
 
 });
+
 database.sync().then((result) => {
 
     app.listen(port, () => {

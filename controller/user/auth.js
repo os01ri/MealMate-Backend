@@ -23,13 +23,13 @@ exports.register = async (req, res, next) => {
     let user = await db.user.create({ name, email, password, logo, code, username, hash })
 
 
-    mail.sendMail({
+    // mail.sendMail({
 
-        from: process.env.MAIL_FROM,
-        to: email,
-        subject: "Verify Code",
-        text: `You Can Verify Your Account by this code ${code}`
-    })
+    //     from: process.env.MAIL_FROM,
+    //     to: email,
+    //     subject: "Verify Code",
+    //     text: `You Can Verify Your Account by this code ${code}`
+    // })
 
     let token = await util.generateToken(user.id, process.env.USER_TOKEN_KEY, process.env.USER_TOKEN_EXPIRED_AT);
     let refreshToken = await util.generateToken(user.id, process.env.USER_REFRESH_TOKEN_KEY, process.env.USER_REFRSH_TOKEN_EXPIRED_AT);

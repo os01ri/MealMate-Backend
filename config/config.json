@@ -1,8 +1,8 @@
 {
   
   "development": {
-    "username": "universityfood",
-    "password": "password",
+    "username": "root",
+    "password": "",
     "database": "universityfood",
     "host": "localhost",
     "dialect": "mysql"

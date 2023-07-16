@@ -32,7 +32,7 @@ exports.addtowishlist = async (req, res, next) => {
 exports.getall = async (req, res, next) => {
 
 
-    let wishlist = await db.wishlist.findAll({ where: { user_id: req.user.id }, include: db.ingredient });
+    let wishlist = await db.wishlist.findAll({ where: { user_id: req.user.id }, include: [{model:db.ingredient,include:db.unit}] });
 
     return res.success(wishlist, "this is all wishlist")
 }
