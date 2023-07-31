@@ -24,6 +24,7 @@ const userrecipeRoute = require("./user/recipe");
 const usertypeRoute = require("./user/type");
 const userwishlistRoute = require("./user/wishlist");
 
+const userfollow=require("./user/follow");
 const userunitRoute = require("./user/unit");
 const userunlikerecipeRoute = require("./user/unlikereipe");
 
@@ -41,6 +42,8 @@ const imageroute = require("./image");
 route.use(adminRoute);
 route.use(unlikeingredientRoute);
 route.use(userunitRoute);
+route.use(userfollow);
+
 
 route.use(userunlikerecipeRoute);
 

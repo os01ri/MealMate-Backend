@@ -18,11 +18,38 @@ module.exports = {
         unique: true
       },
       
+
+      ordered_count: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue:0
+      },
+      
+      rate_count: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue:0
+      },
+
+      
+      rate_avg: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue:0
+      },
       feeds: {
 
         type: Sequelize.INTEGER,
       },
       description: {
+
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      time: {
 
         type: Sequelize.STRING,
         allowNull: false

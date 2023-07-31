@@ -1,3 +1,4 @@
+const { Op } = require("sequelize");
 const db = require("../../models");
 const util = require("../../util/helper");
 const fs = require("fs")
@@ -30,6 +31,20 @@ exports.getall = async (req, res, next) => {
 
     let recipes = await db.recipe.findAll({ include: [db.type, db.category, db.ingredient, db.step], attributes: { exclude: ["type_id", "category_id"] } })
     return res.success(recipes, "thiss is all recipes")
+
+}
+
+exports.storerate=async(req,res,next)=>{
+
+    let id=req.body.id;
+    let rate=req.body.rate;
+    let recipe=await db.recipe.findByPk(id);
+    let avg=recipe.rate_avg*recipe.rate_count;
+    avg+=rate;
+    avg=avg/(recipe.rate_count+1);
+    let count=recipe.rate_count+1;
+    await db.recipe.update({rate_avg:avg,rate_cosunt:count},{where:{id}});
+    return res.success({},"the recipe was rating successfully");
 
 }
 
@@ -143,6 +158,32 @@ exports.storeByUser = async (req, res, next) => {
 
 }
 
+exports.indextrending = async (req, res, next) => {
+
+    let recipes = await db.recipe.findAll({ 
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+        where: { status: true },
+        order:[["rate_avg","DESC"]]
+     })
+    return res.success(recipes, "this is all recipes")
+
+
+}
+
+
+exports.indexmostordered = async (req, res, next) => {
+
+    let recipes = await db.recipe.findAll({ 
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+        where: { status: true },
+        order:[["ordered_count","DESC"]]
+     })
+    return res.success(recipes, "this is all recipes")
+
+
+}
+
+
 exports.getalluser = async (req, res, next) => {
 
     let recipes = await db.recipe.findAll({ include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
@@ -150,7 +191,6 @@ exports.getalluser = async (req, res, next) => {
 
 
 }
-
 
 exports.getUserRecipe = async (req, res, next) => {
 
@@ -186,5 +226,58 @@ exports.getAllwithUserRecipe = async (req, res, next) => {
 
     return res.success(recipes, "this is all recipes")
 
+
+}
+
+
+
+exports.indexbyfollow=async(req,res,next)=>{
+
+
+    let ids=await db.follow.findAll({where:{
+
+        followby_id:req.user.id
+
+    },
+    attributes:["follower_id"],
+    raw:true
+    }).then(folows=>folows.map(follow=>follow.follower_id));
+
+
+    let recipes = await db.recipe.findAll({ 
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+        where: {
+             user_id:ids
+         }
+     })
+    return res.success(recipes, "this is all recipes")
+
+
+
+    
+}
+
+
+exports.indexrestriction=async(req,res,next)=>{
+
+    let user_id=req.user.id;
+    let ingredient_ids=await db.unlike.findAll({where:{user_id}}).then(ingredients=>ingredients.map(ingredient=>ingredient.ingredient_id))
+    let recipes=await db.recipe.findAll(
+        {
+            // where:{status:false},
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,where:{
+
+            id: {
+
+
+                [Op.ne]: ingredient_ids
+  
+              },
+
+
+        },through: { attributes: ["quantity"] }}, db.step],
+    
+    });
+    return res.success(recipes,"this is all recipe with restriction")
 
 }

@@ -36,8 +36,30 @@ module.exports = (sequelize, DataTypes) => {
     },
     description: {
 
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false
+    },
+
+    ordered_count: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue:0
+    },
+    
+    rate_count: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue:0
+    },
+
+    
+    rate_avg: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue:0
     },
     time: {
 

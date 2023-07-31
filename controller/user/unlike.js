@@ -33,7 +33,10 @@ exports.store = async (req, res, next) => {
 exports.getall = async (req, res, next) => {
 
 
-    let unlikes = await db.unlike.findAll();
+    let unlikes = await db.unlike.findAll({include:["ingredient"],
+
+    attributes: { exclude: ["ingredient_id","user_id"] }
+});
 
     return res.success(unlikes, "this is all unlike ingredient")
 
@@ -44,7 +47,11 @@ exports.show = async (req, res, next) => {
 
 
     let id = req.params.id;
-    let unlike = await db.unlike.findByPk(id);
+    
+    let unlike = await db.unlike.findByPk(id,{include:["ingredient"],
+
+    attributes: { exclude: ["ingredient_id","user_id"] }
+});
 
     return res.success(unlike, "this is all unlike ingredient")
 

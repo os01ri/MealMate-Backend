@@ -17,6 +17,9 @@ module.exports = (sequelize, DataTypes) => {
       User.belongsToMany(models.ingredient, { through: "grocery", foreignKey: "user_id", otherKey: "ingredient_id", as: "groceries" })
       User.hasMany(models.recipe, { foreignKey: "user_id" })
       User.hasMany(models.order, { foreignKey: "user_id" })
+      User.hasMany(models.follow,{foreignKey:"follower_id",as:"follower"});
+      User.hasMany(models.follow,{foreignKey:"followby_id",as:"followby"});
+
 
     }
   }
