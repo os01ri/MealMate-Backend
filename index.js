@@ -43,12 +43,12 @@ app.use((err, req, res, next) => {
 })
 
 
-process.on('uncaughtException', function (err) {
+// process.on('uncaughtException', function (err) {
 
 
 
 
-});
+// });
 
 database.sync().then((result) => {
 

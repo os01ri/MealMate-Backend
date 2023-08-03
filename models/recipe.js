@@ -34,6 +34,15 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       unique: true
     },
+
+    
+    number_cooked: {
+
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue:0
+    },
+    
     description: {
 
       type: DataTypes.TEXT,

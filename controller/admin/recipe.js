@@ -281,3 +281,16 @@ exports.indexrestriction=async(req,res,next)=>{
     return res.success(recipes,"this is all recipe with restriction")
 
 }
+
+
+exports.cook=async(req,res,next)=>{
+
+    let id=req.body.recipe_id;
+    let recipe =await db.recipe.findByPk(id);
+    let newCook=recipe.number_cooked;
+    await db.recipe.update({cook:newCook+1});
+    res.success(null,"the recipe was cooked successfully");
+
+    
+
+}

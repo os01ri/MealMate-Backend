@@ -76524,3 +76524,110 @@
   message: 'HTTP GET /user/recipe/indexrestriction',
   timestamp: '2023-07-31T12:53:59.309Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/recipe/cook',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwODA0NTU3LCJleHAiOjE2OTExNjQ1NTd9.TcK-THg9BejsPlXcMpOE3VgOcpMYua38FJR3m0FovQk',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '5b7dc944-f66c-4cce-bf6a-a06ca8b1a1d0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '11'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/recipe/cook',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 28
+  },
+  level: 'warn',
+  message: 'HTTP POST /user/recipe/cook',
+  timestamp: '2023-07-31T13:56:34.197Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/recipe/cook',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwODA0NTU3LCJleHAiOjE2OTExNjQ1NTd9.TcK-THg9BejsPlXcMpOE3VgOcpMYua38FJR3m0FovQk',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '67a4d2cf-0c52-4b67-a902-22ce15074deb',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '11'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/recipe/cook',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 8
+  },
+  level: 'warn',
+  message: 'HTTP POST /user/recipe/cook',
+  timestamp: '2023-07-31T13:56:39.883Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/recipe/cook',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwODA0NTU3LCJleHAiOjE2OTExNjQ1NTd9.TcK-THg9BejsPlXcMpOE3VgOcpMYua38FJR3m0FovQk',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '7fc2b61c-0ba5-4f05-aee2-09b319232cb0',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '11'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/recipe/cook',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 29
+  },
+  level: 'warn',
+  message: 'HTTP POST /user/recipe/cook',
+  timestamp: '2023-08-03T16:39:48.944Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'e83c693a-09de-4a6d-b3fd-bdc4df392d51',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '37'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 317
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-08-03T16:41:05.341Z'
+}

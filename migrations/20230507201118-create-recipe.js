@@ -17,7 +17,15 @@ module.exports = {
         allowNull: false,
         unique: true
       },
+
+      number_cooked: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        defaultValue:0
+      },
       
+
 
       ordered_count: {
 
