@@ -8,7 +8,10 @@ const storeValidation = require("../../validation/user/follow/store");
 // const deleteValidation = require("../../validation/user/grocery/get");
 
 router.post("/user/follow/store", storeValidation.store, Auth(process.env.USER_TOKEN_KEY), followController.store).
-    post("/user/follow/unfollow", Auth(process.env.USER_TOKEN_KEY), followController.unfollow);
+    post("/user/follow/unfollow", Auth(process.env.USER_TOKEN_KEY), followController.unfollow).
+    get("/user/follow/indexfollower", Auth(process.env.USER_TOKEN_KEY), followController.indexfollower).
+    get("/user/follow/indexfollowby", Auth(process.env.USER_TOKEN_KEY), followController.indexfollowby);
+
     // delete("/user/grocery/:id/destroy", Auth(process.env.USER_TOKEN_KEY), deleteValidation.get, groceryController.delete).
     // put("/user/grocery/:id/update", Auth(process.env.USER_TOKEN_KEY), updateValidation.update, groceryController.update)
 

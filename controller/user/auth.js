@@ -12,7 +12,7 @@ exports.register = async (req, res, next) => {
     let email = req.body.email;
     let password = req.body.password;
     let logo = req.body.logo;
-    let hash = null;
+    let hash = req.body.logo;
     let code = util.randomcode();
     if (logo != undefined) {
 
@@ -128,4 +128,54 @@ exports.logout = (req, res, next) => {
 
 
 
+}
+
+
+
+exports.showuserinfo=async(req,res,next)=>{
+
+    let user=await db.user.findByPk(req.user.id,{
+
+        // includeIgnoreAttributes:false,
+
+        attributes:[
+
+            "id",
+            "name",
+            "username",
+            "email",
+            "logo",
+            "hash",
+            "status",
+
+                [db.Sequelize.fn('COUNT', db.Sequelize.col('follower.id')), 'followers'],
+                [db.Sequelize.fn('COUNT', db.Sequelize.col('followby.id')), 'following'],
+
+
+
+        ],
+
+        
+        include:[
+
+            {association:"unlikeingredient",through: { attributes: []}},
+            {association:"follower",
+
+            attributes:[
+
+            ]
+            
+        },
+            {association:"followby",
+        
+            attributes:[
+
+            ]}
+    
+        ],
+
+
+    });
+
+    res.success(user,"this is your info")
 }

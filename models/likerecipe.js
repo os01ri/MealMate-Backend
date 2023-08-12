@@ -3,49 +3,46 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class follow extends Model {
+  class likerecipe extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      
-      follow.belongsTo(models.user, { foreignKey: "follower_id",as:"follower" })
-      follow.belongsTo(models.user, { foreignKey: "followby_id",as:"followby" })
+
+      likerecipe.belongsTo(models.recipe, { foreignKey: "recipe_id" });
 
     }
   }
-  follow.init({
-    follower_id: {
+  likerecipe.init({
+
+    id: {
+
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    user_id: {
 
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "users",
-        key: "id"
-
-      },
 
     },
 
-    
-    followby_id: {
+    recipe_id: {
 
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: "users",
-        key: "id"
-
-      },
 
     },
+
 
   }, {
     sequelize,
-    modelName: 'follow',
+    modelName: 'likerecipe',
     timestamps:false
   });
-  return follow;
+  return likerecipe;
 };

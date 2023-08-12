@@ -13,6 +13,8 @@ const refreshToken = require("../../middleware/refreshToken");
 router.post("/user/auth/register", registerValidation.register, authController.register).
     post("/user/auth/verifyaccount", Auth(process.env.USER_TOKEN_KEY), alreadyVerfiedAccount, authController.verify).
     post("/user/auth/login", loginValidation.login, authController.login).
+    get("/user/showuserinfo",Auth(process.env.USER_TOKEN_KEY), authController.showuserinfo).
+
     post("/user/auth/refreshtoken", refreshToken(process.env.USER_REFRESH_TOKEN_KEY), authController.refreshtoken).
     post("/user/auth/logout", Auth(process.env.USER_TOKEN_KEY), authController.logout)
 module.exports = router;

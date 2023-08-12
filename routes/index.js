@@ -15,6 +15,8 @@ const unitRoute = require("./admin/unit");
 const userauthRoute = require("./user/auth");
 const usercategoryRoute = require("./user/category");
 const usergroceryRoute = require("./user/grocery");
+const likerecipeRoute = require("./user/likerecipe");
+
 const useringredientRoute = require("./user/ingredient");
 const usernutritionalRoute = require("./user/nutritional");
 const userorderRoute = require("./user/order");
@@ -68,6 +70,8 @@ route.use(usergroceryRoute);
 route.use(useringredientRoute);
 route.use(usernutritionalRoute);
 route.use(userorderRoute);
+route.use(likerecipeRoute);
+
 
 route.use(userpasswordRoute);
 route.use(userrecipeRoute);

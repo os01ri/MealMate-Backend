@@ -15,10 +15,17 @@ module.exports = (sequelize, DataTypes) => {
 
       User.belongsToMany(models.ingredient, { through: "wishlist", foreignKey: "user_id", otherKey: "ingredient_id" })
       User.belongsToMany(models.ingredient, { through: "grocery", foreignKey: "user_id", otherKey: "ingredient_id", as: "groceries" })
+      User.belongsToMany(models.ingredient, { through: "unlike", foreignKey: "user_id", otherKey: "ingredient_id", as: "unlikeingredient" })
+      // User.belongsToMany(models.recipe, { through: "likerecipe", foreignKey: "user_id", otherKey: "recipe_id", as: "likerecipe" });
+      User.belongsToMany(User,{through:"follow",foreignKey:"follower_id",otherKey:"followby_id",as:"follower"})
+      User.belongsToMany(User,{through:"follow",foreignKey:"followby_id",otherKey:"follower_id",as:"followby"})
+
+      User.belongsToMany(models.recipe,{through: "likerecipe", foreignKey: "user_id", otherKey: "recipe_id",as:"likerecipes"});
       User.hasMany(models.recipe, { foreignKey: "user_id" })
       User.hasMany(models.order, { foreignKey: "user_id" })
-      User.hasMany(models.follow,{foreignKey:"follower_id",as:"follower"});
-      User.hasMany(models.follow,{foreignKey:"followby_id",as:"followby"});
+      // User.hasMany(models.follow,{foreignKey:"follower_id",as:"follower1"});
+      // User.hasMany(models.follow,{foreignKey:"followby_id",as:"followby1"});
+    //  User.hasMany(models.likerecipe,{foreignKey:"user_id",as:"likerecipe"});
 
 
     }
@@ -82,13 +89,17 @@ module.exports = (sequelize, DataTypes) => {
     logo: {
 
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
+      defaultValue:process.env.APP_URL+"public/anonymous-user.jpg"        
+
     },
 
     hash: {
 
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
+      defaultValue:"UBPs#C?b-:?b~qofRjj[ayfQRkay_3j[ayj["        
+
     },
     status: {
 

@@ -48,13 +48,16 @@ module.exports = {
       logo: {
 
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
+        defaultValue:process.env.APP_URL+"public/anonymous-user.jpg"        
       },
 
       hash: {
 
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: true,
+        defaultValue:"UBPs#C?b-:?b~qofRjj[ayfQRkay_3j[ayj["    
+
       },
       status: {
 

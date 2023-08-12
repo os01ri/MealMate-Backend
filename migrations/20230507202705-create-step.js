@@ -26,6 +26,12 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      
+      time: {
+
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       recipe_id: {
 
         type: Sequelize.INTEGER,

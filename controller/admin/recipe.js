@@ -17,7 +17,7 @@ exports.store = async (req, res, next) => {
     let category_id = req.body.category_id;
     let steps = req.body.step;
     let recipe = await db.recipe.create({ name,feeds, description, time, url, type_id, category_id, steps, hash, status: true });
-    steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description }))
+    steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description,time:ob.time }))
     await db.step.bulkCreate(steps);
     let ingredient = req.body.ingredient;
     let recipe_ingredient = ingredient.map(object => ({ ingredient_id: object.id, recipe_id: recipe.id, quantity: object.quantity, unit_id: object.unit_id }))
@@ -148,7 +148,7 @@ exports.storeByUser = async (req, res, next) => {
     let category_id = req.body.category_id;
     let steps = req.body.step;
     let recipe = await db.recipe.create({ name,feeds, description, hash, time, url, type_id, user_id, category_id, steps, status: false });
-    steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description }));
+    steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description,time:ob.time }));
     await db.step.bulkCreate(steps);
     let ingredient = req.body.ingredient;
     let recipe_ingredient = ingredient.map(object => ({ ingredient_id: object.id, recipe_id: recipe.id, quantity: object.quantity, unit_id: object.unit_id }))
@@ -163,7 +163,7 @@ exports.indextrending = async (req, res, next) => {
     let recipes = await db.recipe.findAll({ 
         include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: { status: true },
-        order:[["rate_avg","DESC"]]
+        order:[["number_cooked","DESC"]]
      })
     return res.success(recipes, "this is all recipes")
 
@@ -288,7 +288,7 @@ exports.cook=async(req,res,next)=>{
     let id=req.body.recipe_id;
     let recipe =await db.recipe.findByPk(id);
     let newCook=recipe.number_cooked;
-    await db.recipe.update({cook:newCook+1});
+    await db.recipe.update({number_cooked:newCook+1},{where:{id}});
     res.success(null,"the recipe was cooked successfully");
 
     
