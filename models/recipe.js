@@ -49,12 +49,12 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
 
-    ordered_count: {
+    // ordered_count: {
 
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue:0
-    },
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    //   defaultValue:0
+    // },
     
     rate_count: {
 

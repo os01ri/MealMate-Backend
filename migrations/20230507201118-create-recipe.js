@@ -27,12 +27,12 @@ module.exports = {
       
 
 
-      ordered_count: {
+      // ordered_count: {
 
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        defaultValue:0
-      },
+      //   type: Sequelize.INTEGER,
+      //   allowNull: false,
+      //   defaultValue:0
+      // },
       
       rate_count: {
 

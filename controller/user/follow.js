@@ -45,13 +45,22 @@ exports.indexfollower=async(req,res,next)=>{
     
     
     // })   
-    
     let follower=await db.user.findByPk(follower_id,{
 
-        attributes:[],
-        include:[]
-    })
-    return res.success(follower,"this is your follower")
+        include:[{
+
+            association:"follower",
+            through: {attributes: []}
+
+        }]
+
+    });
+    // let follower=await db.user.findByPk(follower_id,{
+
+    //     attributes:["id"],
+    //     include:[]
+    // })
+    return res.success(follower.followby??null,"this is your follower")
    
 
 
@@ -65,10 +74,15 @@ exports.indexfollowby=async(req,res,next)=>{
 
     let follower=await db.user.findByPk(followby_id,{
 
-        attributes:[],
-        include:["followby"]
+        include:[{
+
+            association:"followby",
+            through: {attributes: []}
+
+        }]
+
     })
-    return res.success(follower,"this is the person you are follow")
+    return res.success(follower.followby??null,"this is the person you are follow")
    
 
 

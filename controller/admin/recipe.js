@@ -205,17 +205,17 @@ exports.indexmostrated = async (req, res, next) => {
 
 }
 
-exports.indexmostordered = async (req, res, next) => {
+// exports.indexmostordered = async (req, res, next) => {
 
-    let recipes = await db.recipe.findAll({ 
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
-        where: { status: true },
-        order:[["ordered_count","DESC"]]
-     })
-    return res.success(recipes, "this is all recipes")
+//     let recipes = await db.recipe.findAll({ 
+//         include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+//         where: { status: true },
+//         order:[["ordered_count","DESC"]]
+//      })
+//     return res.success(recipes, "this is all recipes")
 
 
-}
+// }
 
 
 exports.getalluser = async (req, res, next) => {
