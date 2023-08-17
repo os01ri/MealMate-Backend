@@ -49,7 +49,7 @@ exports.indexfollower=async(req,res,next)=>{
     let follower=await db.user.findByPk(follower_id,{
 
         attributes:[],
-        include:["follower"]
+        include:[]
     })
     return res.success(follower,"this is your follower")
    

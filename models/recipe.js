@@ -1,6 +1,6 @@
 'use strict';
 const {
-  Model
+  Model, Op
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class recipe extends Model {
@@ -142,7 +142,79 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'recipe',
-    timestamps: false
+    timestamps: false,
+    scopes:{
+
+      status(status){
+
+        if(status==undefined){
+
+          return {}
+        }
+
+        return {
+
+          where:{
+
+            status
+          }
+        };
+        
+
+      },
+
+      category(id){
+
+        if(id==undefined){
+
+          return {
+
+
+          }
+        }
+       
+        return {
+
+          where:{
+
+            category_id:id
+          }
+        };
+       
+
+      },
+
+
+      name(name){
+
+        if(name==undefined){
+
+          return {};
+
+        }
+
+        return {
+
+          where: {
+            name: {
+
+              [Op.like]: `%${name}%`
+            }
+          }
+
+
+
+        };
+
+
+      }
+
+
+
+
+
+
+    }
   });
   return recipe;
 };

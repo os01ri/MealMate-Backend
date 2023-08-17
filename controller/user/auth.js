@@ -2,13 +2,14 @@ const { sendMail } = require("../../config/mail");
 const db = require("../../models");
 const util = require("../../util/helper");
 const mail = require("../../config/mail");
+const { Op } = require("sequelize");
 
 exports.register = async (req, res, next) => {
 
 
     let name = req.body.name;
     let username = req.body.username;
-
+    let city=req.body.city;
     let email = req.body.email;
     let password = req.body.password;
     let logo = req.body.logo;
@@ -20,7 +21,7 @@ exports.register = async (req, res, next) => {
         logo = await util.rename(logo, "public/user")
     }
 
-    let user = await db.user.create({ name, email, password, logo, code, username, hash })
+    let user = await db.user.create({ name, email, password, logo,city, code, username, hash })
 
 
     // mail.sendMail({
@@ -144,6 +145,7 @@ exports.showuserinfo=async(req,res,next)=>{
             "name",
             "username",
             "email",
+            "city",
             "logo",
             "hash",
             "status",
@@ -178,4 +180,52 @@ exports.showuserinfo=async(req,res,next)=>{
     });
 
     res.success(user,"this is your info")
+}
+
+
+exports.updateprofile=async(req,res,next)=>{
+
+
+    let id=req.user.id;
+    let username=req.body.username;
+    let name=req.body.name;
+    let logo=req.body.logo;
+    let city=req.body.city;
+
+    let user=await db.user.findByPk(id);
+    let count=await db.user.count({where:{
+        username,
+        id: {
+
+
+            [Op.ne]: id
+
+          }
+
+
+    }});
+
+    if(count>0){
+
+        return res.error(422,"username is exists in our data")
+    }
+    
+    if (logo != undefined) {
+
+        hash = await util.encodeImageToBlurhash(logo)
+        logo = await util.rename(logo, "public/user")
+    }else{
+
+        logo=user.logo;
+        hash=user.hash;
+
+    }
+
+    await db.user.update({logo,hash,username,name,city},{where:{id}})
+
+    res.success(null,"the profile was updated successfully")
+    
+    
+
+
 }

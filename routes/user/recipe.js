@@ -10,7 +10,7 @@ const Auth = require("../../middleware/Auth");
 
 router.get("/user/recipe/index", recipeController.getalluser).
     get("/user/recipe/indextrending", Auth(process.env.USER_TOKEN_KEY),recipeController.indextrending).
-    get("/user/recipe/indexmostordered",Auth(process.env.USER_TOKEN_KEY), recipeController.indextrending).
+    get("/user/recipe/indexmostrated",Auth(process.env.USER_TOKEN_KEY), recipeController.indexmostrated).
     post("/user/recipe/storerate",Auth(process.env.USER_TOKEN_KEY), recipeController.storerate).
 
     get("/user/recipe/getUserRecipe", Auth(process.env.USER_TOKEN_KEY), recipeController.getUserRecipe).

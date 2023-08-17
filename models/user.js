@@ -94,6 +94,14 @@ module.exports = (sequelize, DataTypes) => {
 
     },
 
+    
+    city: {
+
+      type: DataTypes.STRING,
+      allowNull: true
+
+    },
+
     hash: {
 
       type: DataTypes.STRING,

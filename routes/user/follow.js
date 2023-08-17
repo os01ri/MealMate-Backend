@@ -3,9 +3,6 @@ const followController = require("../../controller/user/follow");
 const router = express.Router();
 const Auth = require("../../middleware/Auth");
 const storeValidation = require("../../validation/user/follow/store");
-// const updateValidation = require("../../validation/user/grocery/update");
-
-// const deleteValidation = require("../../validation/user/grocery/get");
 
 router.post("/user/follow/store", storeValidation.store, Auth(process.env.USER_TOKEN_KEY), followController.store).
     post("/user/follow/unfollow", Auth(process.env.USER_TOKEN_KEY), followController.unfollow).

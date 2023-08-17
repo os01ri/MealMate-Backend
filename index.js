@@ -52,7 +52,7 @@ app.use((err, req, res, next) => {
 
 database.sync().then((result) => {
 
-    app.listen(port, () => {
+    app.listen(port,"0.0.0.0", () => {
 
         console.log(`app is listening in port ${port}`)
 

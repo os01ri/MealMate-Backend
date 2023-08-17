@@ -1,3 +1,4 @@
+const { Op } = require("sequelize");
 const database=require("../models/index");
 
 const rule=(model,name,expect=false)=>async(value,{req})=>{
@@ -8,7 +9,18 @@ const rule=(model,name,expect=false)=>async(value,{req})=>{
 
         let id=req.params.id||req.query.id||req.body.id;
         console.log("ali"+id)
-        count=await database.sequelize.model(model).count({where:{[name]:value}});
+        count=await database.sequelize.model(model).count({where:{
+            
+            [name]:value,
+            id: {
+
+
+                [Op.ne]: id
+  
+              },
+
+        
+        }});
         
         console.log("uniq"+count)
     }else{

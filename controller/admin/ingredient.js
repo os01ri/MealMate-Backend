@@ -88,9 +88,9 @@ exports.update = async (req, res, next) => {
 
 exports.getall = async (req, res, next) => {
 
+    let category_id=req.query.category_id;
 
-
-    let ingredients = await db.ingredient.findAll({ include: [{ model: db.nutritional, through: { attributes: ["value"] } }, { model: db.unit }, { model: db.category1 }] });
+    let ingredients = await db.ingredient.scope({method:["category",category_id]}).findAll({ include: [{ model: db.nutritional, through: { attributes: ["value"] } }, { model: db.unit }, { model: db.category1 }] });
     return res.success(ingredients, "this is all ingredients")
 
 }

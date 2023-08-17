@@ -29,7 +29,19 @@ exports.store = async (req, res, next) => {
 
 exports.getall = async (req, res, next) => {
 
-    let recipes = await db.recipe.findAll({ include: [db.type, db.category, db.ingredient, db.step], attributes: { exclude: ["type_id", "category_id"] } })
+    let status=req.query.status;
+    let recipes = await db.recipe.scope({method:["status",status]}).findAll({ include: [db.type, db.category, {
+        
+        model:db.ingredient,
+
+        include:[{
+            
+            model:db.unit,
+            attributes:["name","id"]
+            
+        }]
+    
+    }, db.step], attributes: { exclude: ["type_id", "category_id"] } })
     return res.success(recipes, "thiss is all recipes")
 
 }
@@ -160,7 +172,11 @@ exports.storeByUser = async (req, res, next) => {
 
 exports.indextrending = async (req, res, next) => {
 
-    let recipes = await db.recipe.findAll({ 
+    
+    let name=req.query.name;
+    let category=req.query.category_id;
+
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
         include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: { status: true },
         order:[["number_cooked","DESC"]]
@@ -170,6 +186,24 @@ exports.indextrending = async (req, res, next) => {
 
 }
 
+
+exports.indexmostrated = async (req, res, next) => {
+
+
+    
+    let name=req.query.name;
+    let category=req.query.category_id;
+
+
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+        where: { status: true },
+        order:[["rate_avg","DESC"]]
+     })
+    return res.success(recipes, "this is all recipes")
+
+
+}
 
 exports.indexmostordered = async (req, res, next) => {
 
@@ -186,7 +220,9 @@ exports.indexmostordered = async (req, res, next) => {
 
 exports.getalluser = async (req, res, next) => {
 
-    let recipes = await db.recipe.findAll({ include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
+    let name=req.query.name;
+    let category=req.query.category_id;
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
     return res.success(recipes, "this is all recipes")
 
 
@@ -195,8 +231,11 @@ exports.getalluser = async (req, res, next) => {
 exports.getUserRecipe = async (req, res, next) => {
 
 
+        
+    let name=req.query.name;
+    let category=req.query.category_id;
     let user_id = req.user.id;
-    let recipes = await db.recipe.findAll({ where: { user_id }, include: [db.type, db.category, db.step, {model:db.ingredient}] });
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ where: { user_id }, include: [db.type, db.category, db.step, {model:db.ingredient}] });
 
     return res.success(recipes, "this is all recipe for you")
 
@@ -208,7 +247,10 @@ exports.getAllwithUserRecipe = async (req, res, next) => {
 
     let user_id = req.user.id;
 
-    let recipes = await db.recipe.findAll({
+    
+    let name=req.query.name;
+    let category=req.query.category_id;
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({
         include: [db.type, db.category, db.step, db.ingredient],
 
         where: {
@@ -243,8 +285,11 @@ exports.indexbyfollow=async(req,res,next)=>{
     raw:true
     }).then(folows=>folows.map(follow=>follow.follower_id));
 
+    
+    let name=req.query.name;
+    let category=req.query.category_id;
 
-    let recipes = await db.recipe.findAll({ 
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
         include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: {
              user_id:ids
@@ -261,8 +306,11 @@ exports.indexbyfollow=async(req,res,next)=>{
 exports.indexrestriction=async(req,res,next)=>{
 
     let user_id=req.user.id;
+    
+    let name=req.query.name;
+    let category=req.query.category_id;
     let ingredient_ids=await db.unlike.findAll({where:{user_id}}).then(ingredients=>ingredients.map(ingredient=>ingredient.ingredient_id))
-    let recipes=await db.recipe.findAll(
+    let recipes=await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll(
         {
             // where:{status:false},
         include: [db.type, db.category, {model:db.ingredient,include:db.unit,where:{
@@ -273,7 +321,6 @@ exports.indexrestriction=async(req,res,next)=>{
                 [Op.ne]: ingredient_ids
   
               },
-
 
         },through: { attributes: ["quantity"] }}, db.step],
     
@@ -292,5 +339,45 @@ exports.cook=async(req,res,next)=>{
     res.success(null,"the recipe was cooked successfully");
 
     
+
+}
+
+
+exports.update=async(req,res,next)=>{
+
+    let id=req.body.id;
+    let recipe=await  db.recipe.findByPk(id);
+    let name = req.body.name;
+    let description = req.body.description;
+    let time = req.body.time;
+    let feeds = req.body.feeds;
+    let oldpath = req.body.url;
+    let url=recipe.url;
+    let hash=recipe.url;
+
+    if(oldpath!=undefined){
+
+        
+      hash = await util.encodeImageToBlurhash(oldpath)
+      url = await util.rename(oldpath, "public/recipe")
+
+    }
+     let type_id = req.body.type_id;
+     let category_id = req.body.category_id;
+     let steps = req.body.step;
+
+    await db.recipe.update({name,feeds, description, time, url, type_id, category_id, steps, hash,status:true},{where:{id}});
+    // let recipe = await db.recipe.create({ name,feeds, description, time, url, type_id, category_id, steps, hash, status: true });
+    await db.step.destroy({where:{recipe_id:id}})
+    steps = steps.map(ob => ({ name: ob.name, rank: ob.rank, recipe_id: recipe.id, description: ob.description,time:ob.time }))    
+    await db.step.bulkCreate(steps);    
+    let ingredient = req.body.ingredient;
+    await db.recipe_ingredient.destroy({where:{recipe_id:id}})
+    let recipe_ingredient = ingredient.map(object => ({ ingredient_id: object.id, recipe_id: recipe.id, quantity: object.quantity, unit_id: object.unit_id }))
+    await db.recipe_ingredient.bulkCreate(recipe_ingredient)
+     recipe = await db.recipe.findByPk(recipe.id, { include: [db.type, db.category, db.ingredient, db.step], attributes: { exclude: ["type_id", "category_id"] } })
+    res.status(200).json(recipe)
+
+
 
 }

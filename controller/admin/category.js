@@ -26,8 +26,8 @@ exports.update = async (req, res, next) => {
 
 
     let id = req.params.id;
-    let name = req.query.name;
-    let url = req.query.url;
+    let name = req.body.name;
+    let url = req.body.url;
     if (url == undefined) {
 
         await db.category.update({ name }, { where: { id } })

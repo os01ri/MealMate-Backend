@@ -33,6 +33,13 @@ module.exports = {
         allowNull: true
 
       },
+      
+      city: {
+
+        type: Sequelize.STRING,
+        allowNull: true
+
+      },
       password: {
 
         type: Sequelize.STRING,

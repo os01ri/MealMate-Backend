@@ -53,15 +53,15 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'recipe_ingredient',
     timestamps: false,
-    defaultScope: {
+    // defaultScope: {
 
-      attributes: {
+    //   attributes: {
 
-        exclude: ["recipe_id", "ingredient_id"]
-      },
-      include: [db.unit]
+    //     exclude: ["recipe_id", "ingredient_id"]
+    //   },
+    //   include: [db.unit]
 
-    }
+    // }
   });
   return recipe_ingredient;
 };

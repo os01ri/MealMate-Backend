@@ -10,6 +10,8 @@ exports.register = [
     check("email").exists().withMessage("email is require").isEmail().withMessage("email field should be email").custom(unique("user", "email")),
     check("password").exists().withMessage("password is required"),
     check("logo").custom(exists("temp", "url")),
+    check("city").exists().withMessage("city is require"),
+
     handleError.handleValidation
 
 
