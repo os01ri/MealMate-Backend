@@ -86987,3 +86987,29 @@
   message: 'HTTP GET /user/showuserinfo',
   timestamp: '2023-08-17T12:57:18.297Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjkyMjc2OTU5LCJleHAiOjE2OTI2MzY5NTl9.fRQaXelm5WLBjIE025HuvvYxMw0mV0dlLhjs5O54aBM',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '1415319c-e5b6-479f-aa61-afda4bf70b9d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 89
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-17T12:57:52.000Z'
+}
