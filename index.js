@@ -43,16 +43,16 @@ app.use((err, req, res, next) => {
 })
 
 
-// process.on('uncaughtException', function (err) {
+ process.on('uncaughtException', function (err) {
 
 
 
 
-// });
+ });
 
 database.sync().then((result) => {
 
-    app.listen(port,"0.0.0.0", () => {
+    app.listen(port, () => {
 
         console.log(`app is listening in port ${port}`)
 
