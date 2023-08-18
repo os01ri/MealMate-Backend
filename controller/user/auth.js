@@ -229,3 +229,29 @@ exports.updateprofile=async(req,res,next)=>{
 
 
 }
+
+
+
+exports.showuser=async(req,res,next)=>{
+
+    let id=req.params.id;
+    let user=await db.user.findByPk(id,{
+
+        include:[db.recipe,
+            {association:"followby",through: { attributes: []}},
+            {association:"follower",through: { attributes: []}},
+
+        ]
+
+
+    });
+    let isfollow=await db.follow.count({where:{follower_id:id}});
+
+    user = user.toJSON();
+
+    user.isFollow=isfollow==0?false:true;
+    
+    return res.success(user,"this is user info");
+
+
+}

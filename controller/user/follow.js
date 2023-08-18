@@ -50,7 +50,8 @@ exports.indexfollower=async(req,res,next)=>{
         include:[{
 
             association:"follower",
-            through: {attributes: []}
+            through: {attributes: []},
+            include:[db.recipe]
 
         }]
 
@@ -60,7 +61,7 @@ exports.indexfollower=async(req,res,next)=>{
     //     attributes:["id"],
     //     include:[]
     // })
-    return res.success(follower.followby??null,"this is your follower")
+    return res.success(follower.follower??null,"this is your follower")
    
 
 
@@ -77,7 +78,9 @@ exports.indexfollowby=async(req,res,next)=>{
         include:[{
 
             association:"followby",
-            through: {attributes: []}
+            through: {attributes: []},
+            include:[db.recipe]
+
 
         }]
 

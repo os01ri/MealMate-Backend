@@ -33,10 +33,30 @@ exports.store = async (req, res, next) => {
 exports.getall = async (req, res, next) => {
 
 
-    let unlikes = await db.unlike.findAll({include:["ingredient"],
 
-    attributes: { exclude: ["ingredient_id","user_id"] }
-});
+    let user_id=req.user.id;
+    let unlikes=await db.ingredient.findAll({
+
+         include:[
+
+             {association:"unlikeuser",through: { attributes: []},
+             where:{
+
+                id:user_id
+             },
+             attributes: []
+            
+
+            }
+
+
+         ]
+
+    });
+//     let unlikes = await db.unlike.findAll({include:["ingredient"],
+
+//     attributes: { exclude: ["ingredient_id","user_id"] }
+// });
 
     return res.success(unlikes, "this is all unlike ingredient")
 

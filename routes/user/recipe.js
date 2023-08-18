@@ -15,7 +15,7 @@ router.get("/user/recipe/index", recipeController.getalluser).
 
     get("/user/recipe/getUserRecipe", Auth(process.env.USER_TOKEN_KEY), recipeController.getUserRecipe).
     get("/user/recipe/indexbyfollow", Auth(process.env.USER_TOKEN_KEY), recipeController.indexbyfollow).
-    get("/user/recipe/indexrestriction", Auth(process.env.USER_TOKEN_KEY), recipeController.indexrestriction).
+    get("/user/recipe/indexrecommended", Auth(process.env.USER_TOKEN_KEY), recipeController.indexrestriction).
 
     get("/user/recipe/getAllwithUserRecipe", Auth(process.env.USER_TOKEN_KEY), recipeController.getAllwithUserRecipe).
 

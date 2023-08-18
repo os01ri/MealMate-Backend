@@ -102,6 +102,15 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: false
 
     },
+    
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
 
     type_id: {
 
@@ -142,7 +151,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'recipe',
-    timestamps: false,
+    timestamps: true,
     scopes:{
 
       status(status){
@@ -206,6 +215,48 @@ module.exports = (sequelize, DataTypes) => {
 
         };
 
+
+      },
+
+      type(type){
+
+
+        if(type==undefined){
+
+          return {
+
+          };
+        }
+
+        return {
+
+          where:{
+
+            type_id:type
+          }
+        };
+
+
+
+      },
+
+
+      user(user){
+
+
+        if(user==undefined){
+
+          return {};
+        }
+
+
+        return {
+
+          where:{
+
+            user_id:user
+          }
+        };
 
       }
 

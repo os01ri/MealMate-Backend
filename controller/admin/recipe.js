@@ -175,9 +175,12 @@ exports.indextrending = async (req, res, next) => {
     
     let name=req.query.name;
     let category=req.query.category_id;
+    let type=req.query.type_id;
+    let user_id=req.query.user_id;
 
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]},{method:["type",type]},{method:["user",user_id]}).findAll({ 
+        include: [db.type,db.user, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: { status: true },
         order:[["number_cooked","DESC"]]
      })
@@ -193,10 +196,13 @@ exports.indexmostrated = async (req, res, next) => {
     
     let name=req.query.name;
     let category=req.query.category_id;
+    let type=req.query.type_id;
+    let user=req.query.user_id;
 
 
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+
+    let recipes = await db.recipe.scope({method:["user",user]},{method:["name",name]},{method:["category",category]},{method:["type",type]}).findAll({ 
+        include: [db.type,db.user, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: { status: true },
         order:[["rate_avg","DESC"]]
      })
@@ -220,9 +226,17 @@ exports.indexmostrated = async (req, res, next) => {
 
 exports.getalluser = async (req, res, next) => {
 
+    
     let name=req.query.name;
+    let type=req.query.type_id;
+
     let category=req.query.category_id;
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]},{method:["type",type]}).
+    findAll({ 
+        
+        order:[["createdAt","DESC"]],
+        
+        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
     return res.success(recipes, "this is all recipes")
 
 
@@ -234,8 +248,11 @@ exports.getUserRecipe = async (req, res, next) => {
         
     let name=req.query.name;
     let category=req.query.category_id;
+    let type=req.query.type_id;
+
     let user_id = req.user.id;
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ where: { user_id }, include: [db.type, db.category, db.step, {model:db.ingredient}] });
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]},{method:["type",type]}).findAll({ where: { user_id }, include:
+         [db.type,db.user, db.category, db.step, {model:db.ingredient}] });
 
     return res.success(recipes, "this is all recipe for you")
 
@@ -250,8 +267,10 @@ exports.getAllwithUserRecipe = async (req, res, next) => {
     
     let name=req.query.name;
     let category=req.query.category_id;
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({
-        include: [db.type, db.category, db.step, db.ingredient],
+    let type=req.query.type_id;
+
+    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]},{method:["type",type]}).findAll({
+        include: [db.type, db.category,db.user, db.step, db.ingredient],
 
         where: {
 
@@ -288,9 +307,11 @@ exports.indexbyfollow=async(req,res,next)=>{
     
     let name=req.query.name;
     let category=req.query.category_id;
+    let type=req.query.type_id;
+    let user=req.query.user_id;
 
-    let recipes = await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll({ 
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
+    let recipes = await db.recipe.scope({method:["user",user]},{method:["name",name]},{method:["category",category]},{method:["type",type]}).findAll({ 
+        include: [db.type,db.user, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step],
         where: {
              user_id:ids
          }
@@ -309,11 +330,15 @@ exports.indexrestriction=async(req,res,next)=>{
     
     let name=req.query.name;
     let category=req.query.category_id;
+    let type=req.query.type_id;
+    let user=req.query.user_id;
+
+
     let ingredient_ids=await db.unlike.findAll({where:{user_id}}).then(ingredients=>ingredients.map(ingredient=>ingredient.ingredient_id))
-    let recipes=await db.recipe.scope({method:["name",name]},{method:["category",category]}).findAll(
+    let recipes=await db.recipe.scope({method:["user",user]},{method:["name",name]},{method:["category",category]},{method:["type",type]}).findAll(
         {
             // where:{status:false},
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,where:{
+        include: [db.type,db.user, db.category, {model:db.ingredient,include:db.unit,where:{
 
             id: {
 
