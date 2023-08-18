@@ -90328,3 +90328,29 @@
   message: 'HTTP GET /user/showuserinfo',
   timestamp: '2023-08-18T17:56:30.755Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/1/showuser',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyMzc4Mzg3LCJleHAiOjE2OTI3MzgzODd9.9XGbbAAstygpWX9AAcAqgebYOUvMLWfI_E30rkRoWsA',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '9a2a0099-3c92-4803-bdbd-d2e61fd74afd',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/1/showuser',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 76
+  },
+  level: 'info',
+  message: 'HTTP GET /user/1/showuser',
+  timestamp: '2023-08-18T18:06:41.508Z'
+}
