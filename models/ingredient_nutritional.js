@@ -64,6 +64,8 @@ module.exports = (sequelize, DataTypes) => {
         key: "id"
 
       },
+      onDelete:"cascade",
+      onUpdate:"cascade"
 
     },
 
@@ -84,6 +86,18 @@ module.exports = (sequelize, DataTypes) => {
     defaultScope: {
 
       include: [db.unit],
+
+    },
+    scopes:{
+
+      c(){
+
+        return {
+
+          attributes:{exclude:['unit']}
+
+        }
+      }
 
     }
   });

@@ -236,7 +236,7 @@ exports.getalluser = async (req, res, next) => {
         
         order:[["createdAt","DESC"]],
         
-        include: [db.type, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
+        include: [db.type,db.user, db.category, {model:db.ingredient,include:db.unit,through: { attributes: ["quantity"] }}, db.step], where: { status: true } })
     return res.success(recipes, "this is all recipes")
 
 
@@ -404,5 +404,18 @@ exports.update=async(req,res,next)=>{
     res.status(200).json(recipe)
 
 
+
+}
+
+
+exports.unactive=async(req,res,next)=>{
+
+
+    
+    let id = req.params.id;
+    await db.recipe.update({ status: false }, { where: { id } })
+    return res.success({}, "the recipe was unactive successfully")
+
+    
 
 }

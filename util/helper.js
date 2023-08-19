@@ -92,7 +92,9 @@ exports.logout = async (req) => {
 
 exports.getImageUrlFromHttp = (image) => {
 
+    console.log(image)
     let url = image.replace(process.env.APP_URL, "");
+
     return path.resolve(url)
 
 }

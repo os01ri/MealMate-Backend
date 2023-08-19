@@ -14,6 +14,8 @@ router.post("/dashboard/recipe/store", Auth(process.env.ADMIN_TOKEN_KEY), permis
     get("/dashboard/recipe/index", recipeController.getall).
     get("/dashboard/recipe/getunactive", recipeController.getunactive).
     post("/dashboard/recipe/:id/accept", getValidation.get, recipeController.accept).
+    post("/dashboard/recipe/:id/unactive", getValidation.get, recipeController.unactive).
+
     get("/dashboard/recipe/:id/show", getValidation.get, recipeController.get).
     delete("/dashboard/recipe/:id/destroy", Auth(process.env.ADMIN_TOKEN_KEY), permission("recipe"), getValidation.get, recipeController.delete)
 module.exports = router;

@@ -63,3 +63,31 @@ exports.logout = async (req, res, next) => {
 
 
 }
+
+
+
+exports.notificationStore=async(req,res,next)=>{
+
+
+    let title=req.body.title;
+    let body=req.body.body;
+
+    await db.notificantion.create({title,body});
+
+    return res.success(null,"the notification was added successfully")
+
+    
+
+}
+
+
+exports.getallnotification=async(req,res,next)=>{
+
+
+
+    let notifications=await db.notificantion.findAll()
+
+
+    return res.success(notifications,"this is all notification")
+
+}

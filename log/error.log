@@ -2609,3 +2609,373 @@
   message: 'middlewareError',
   timestamp: '2023-05-28T10:45:53.979Z'
 }
+{
+  meta: {
+    error: SyntaxError: Unexpected token , in JSON at position 69
+        at JSON.parse (<anonymous>)
+        at parse (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\body-parser\lib\types\json.js:89:19)
+        at C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\body-parser\lib\read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+        at invokeCallback (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:231:16)
+        at done (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:220:7)
+        at IncomingMessage.onEnd (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '    "name":"بsaddddsdddsاdطhds2s",\n' +
+        '    "price":3000,\n' +
+        '    "unit_id":,\n' +
+        '    "category_id":"1",\n' +
+        '    "price_by":20,\n' +
+        '    "url":"http://localhost:5000/public/temp/12030921692471077101.png",\n' +
+        '    "nutritional":[\n' +
+        '        {\n' +
+        '            "id":"1",\n' +
+        '            "value": 3,\n' +
+        '            "precent":30,\n' +
+        '            "unit_id":\n' +
+        '        }\n' +
+        '    ]\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token , in JSON at position 69\n' +
+      'SyntaxError: Unexpected token , in JSON at position 69\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+      '    at C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n' +
+      '    at invokeCallback (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:231:16)\n' +
+      '    at done (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token , in JSON at position 69\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+      '    at C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n' +
+      '    at invokeCallback (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:231:16)\n' +
+      '    at done (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sat Aug 19 2023 21:51:35 GMT+0300 (GMT+03:00)',
+    process: {
+      pid: 16048,
+      uid: null,
+      gid: null,
+      cwd: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend',
+      execPath: 'C:\\Program Files\\nodejs\\node.exe',
+      version: 'v18.16.1',
+      argv: [
+        'C:\\Program Files\\nodejs\\node.exe',
+        'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\index.js'
+      ],
+      memoryUsage: {
+        rss: 81371136,
+        heapTotal: 34701312,
+        heapUsed: 32059584,
+        external: 1976969,
+        arrayBuffers: 1017320
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 1479269.031 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 203,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/dashboard/ingredient/2/update',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNDcwMTAyLCJleHAiOjE2OTI4MzAxMDJ9.WGNKhvT6M3SoHjogrsnN2BPig_FXEAH2ESGgGZpCkGk',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'f9cbb8f9-d6cf-4f77-b0b2-fd37e34400c5',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '330'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/2/update',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-08-19T18:51:35.283Z'
+}
+{
+  meta: {
+    error: SyntaxError: Unexpected token , in JSON at position 65
+        at JSON.parse (<anonymous>)
+        at parse (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\body-parser\lib\types\json.js:89:19)
+        at C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\body-parser\lib\read.js:128:18
+        at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+        at invokeCallback (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:231:16)
+        at done (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:220:7)
+        at IncomingMessage.onEnd (C:\Users\Ali Hmaidi\Desktop\mealmate_backend\node_modules\raw-body\index.js:280:7)
+        at IncomingMessage.emit (node:events:513:28)
+        at endReadableNT (node:internal/streams/readable:1359:12)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+      expose: true,
+      statusCode: 400,
+      status: 400,
+      body: '{\n' +
+        '    "name":"بsaddddsdddhds2s",\n' +
+        '    "price":3000,\n' +
+        '    "unit_id":,\n' +
+        '    "category_id":"1",\n' +
+        '    "price_by":20,\n' +
+        '    "url":"http://localhost:5000/public/temp/12030921692471077101.png",\n' +
+        '    "nutritional":[\n' +
+        '        {\n' +
+        '            "id":"1",\n' +
+        '            "value": 3,\n' +
+        '            "precent":30,\n' +
+        '            "unit_id":\n' +
+        '        }\n' +
+        '    ]\n' +
+        '}',
+      type: 'entity.parse.failed'
+    },
+    level: 'error',
+    message: 'uncaughtException: Unexpected token , in JSON at position 65\n' +
+      'SyntaxError: Unexpected token , in JSON at position 65\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+      '    at C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n' +
+      '    at invokeCallback (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:231:16)\n' +
+      '    at done (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    stack: 'SyntaxError: Unexpected token , in JSON at position 65\n' +
+      '    at JSON.parse (<anonymous>)\n' +
+      '    at parse (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n' +
+      '    at C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js:128:18\n' +
+      '    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n' +
+      '    at invokeCallback (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:231:16)\n' +
+      '    at done (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:220:7)\n' +
+      '    at IncomingMessage.onEnd (C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js:280:7)\n' +
+      '    at IncomingMessage.emit (node:events:513:28)\n' +
+      '    at endReadableNT (node:internal/streams/readable:1359:12)\n' +
+      '    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)',
+    exception: true,
+    date: 'Sat Aug 19 2023 21:52:32 GMT+0300 (GMT+03:00)',
+    process: {
+      pid: 16048,
+      uid: null,
+      gid: null,
+      cwd: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend',
+      execPath: 'C:\\Program Files\\nodejs\\node.exe',
+      version: 'v18.16.1',
+      argv: [
+        'C:\\Program Files\\nodejs\\node.exe',
+        'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\index.js'
+      ],
+      memoryUsage: {
+        rss: 81846272,
+        heapTotal: 34701312,
+        heapUsed: 32338248,
+        external: 1984723,
+        arrayBuffers: 1025034
+      }
+    },
+    os: { loadavg: [ 0, 0, 0 ], uptime: 1479325.843 },
+    trace: [
+      {
+        column: null,
+        file: null,
+        function: 'JSON.parse',
+        line: null,
+        method: 'parse',
+        native: false
+      },
+      {
+        column: 19,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\types\\json.js',
+        function: 'parse',
+        line: 89,
+        method: null,
+        native: false
+      },
+      {
+        column: 18,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\body-parser\\lib\\read.js',
+        function: null,
+        line: 128,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'node:async_hooks',
+        function: 'AsyncResource.runInAsyncScope',
+        line: 203,
+        method: 'runInAsyncScope',
+        native: false
+      },
+      {
+        column: 16,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'invokeCallback',
+        line: 231,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'done',
+        line: 220,
+        method: null,
+        native: false
+      },
+      {
+        column: 7,
+        file: 'C:\\Users\\Ali Hmaidi\\Desktop\\mealmate_backend\\node_modules\\raw-body\\index.js',
+        function: 'IncomingMessage.onEnd',
+        line: 280,
+        method: 'onEnd',
+        native: false
+      },
+      {
+        column: 28,
+        file: 'node:events',
+        function: 'IncomingMessage.emit',
+        line: 513,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'node:internal/streams/readable',
+        function: 'endReadableNT',
+        line: 1359,
+        method: null,
+        native: false
+      },
+      {
+        column: 21,
+        file: 'node:internal/process/task_queues',
+        function: 'process.processTicksAndRejections',
+        line: 82,
+        method: 'processTicksAndRejections',
+        native: false
+      }
+    ],
+    req: {
+      url: '/dashboard/ingredient/2/update',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNDcwMTAyLCJleHAiOjE2OTI4MzAxMDJ9.WGNKhvT6M3SoHjogrsnN2BPig_FXEAH2ESGgGZpCkGk',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'c9f3bb82-05b1-4d29-820c-e58205c8ce8e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '324'
+      },
+      method: 'PUT',
+      httpVersion: '1.1',
+      originalUrl: '/dashboard/ingredient/2/update',
+      query: {}
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2023-08-19T18:52:32.094Z'
+}

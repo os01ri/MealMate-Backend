@@ -35,9 +35,8 @@ exports.update = async (req, res, next) => {
     }
     let deletedimage = (await db.type.findByPk(id)).url;
     fs.unlinkSync(util.getImageUrlFromHttp(deletedimage));
-    let oldpath = req.query.url;
-    let hash = await util.encodeImageToBlurhash(oldpath)
-    url = await util.rename(oldpath, "public/type")
+    let hash = await util.encodeImageToBlurhash(url)
+    url = await util.rename(url, "public/type")
     await db.type.update({ name, url, hash }, { where: { id } })
     let type = await db.type.findByPk(id);
     return res.success({ type }, "the type was updated successfully")

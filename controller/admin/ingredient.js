@@ -65,7 +65,7 @@ exports.update = async (req, res, next) => {
 
     }
 
-    await db.ingredient_nutritional.destroy({ where: { ingredient_id: id } })
+     await db.ingredient_nutritional.scope({method:["c"]}).destroy({ where: { ingredient_id: id } })
 
     let pivot = nutritional.map(object => {
         let ob = {};

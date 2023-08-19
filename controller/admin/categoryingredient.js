@@ -26,7 +26,7 @@ exports.update = async (req, res, next) => {
 
     let id = req.params.id;
     let name = req.body.name;
-    let url = req.body.url;
+    let url = req.query.url;
     if (url == undefined) {
 
         await db.category1.update({ name }, { where: { id } })
@@ -38,7 +38,7 @@ exports.update = async (req, res, next) => {
     let oldpath = req.query.url;
     let hash = await util.encodeImageToBlurhash(oldpath)
     url = await util.rename(oldpath, "public/categoryingredient")
-    await db.category1.update({ name, url }, { where: { id } })
+    await db.category1.update({ name,hash, url }, { where: { id } })
     let category = await db.category1.findByPk(id, { include: [db.ingredient] });
     return res.success({ category }, "the category was updated successfully")
 

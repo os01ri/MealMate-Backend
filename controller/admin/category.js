@@ -36,12 +36,11 @@ exports.update = async (req, res, next) => {
     }
     let deletedimage = (await db.category.findByPk(id)).url;
     fs.unlinkSync(util.getImageUrlFromHttp(deletedimage));
-    let oldpath = req.query.url;
-    let hash = await util.encodeImageToBlurhash(oldpath)
-    url = await util.rename(oldpath, "public/category")
-    await db.category.update({ name, url, hash }, { where: { id } })
-    let category = await db.category.findByPk(id);
-    return res.success({ category }, "the category was updated successfully")
+     let hash = await util.encodeImageToBlurhash(url)
+    url = await util.rename(url, "public/category")
+     await db.category.update({ name, url, hash }, { where: { id } })
+     let category = await db.category.findByPk(id);
+    return res.success({category}, "the category was updated successfully")
 
 }
 
