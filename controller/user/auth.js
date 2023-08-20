@@ -150,31 +150,31 @@ exports.showuserinfo=async(req,res,next)=>{
             "hash",
             "status",
 
-                [db.Sequelize.fn('COUNT', db.Sequelize.col('follower.id')), 'followers'],
-                [db.Sequelize.fn('COUNT', db.Sequelize.col('followby.id')), 'following'],
+                // [db.Sequelize.fn('COUNT', db.Sequelize.col('follower.id')), 'followers'],
+                // [db.Sequelize.fn('COUNT', db.Sequelize.col('followby.id')), 'following'],
 
 
 
         ],
 
         
-        include:[
+        // include:[
 
-            {association:"unlikeingredient",through: { attributes: []}},
-            {association:"follower",
+        //     {association:"unlikeingredient",through: { attributes: []}},
+        //     {association:"follower",
 
-            attributes:[
+        //     attributes:[
 
-            ]
+        //     ]
             
-        },
-            {association:"followby",
+        // },
+        //     {association:"followby",
         
-            attributes:[
+        //     attributes:[
 
-            ]}
+        //     ]}
     
-        ],
+        // ],
 
 
     });

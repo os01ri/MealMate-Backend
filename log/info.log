@@ -92345,3 +92345,181 @@
   message: 'HTTP PUT /dashboard/ingredient/2/update',
   timestamp: '2023-08-19T19:10:43.036Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/ingredient/1/show',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '56063fb9-d64c-4011-82c4-cffd2412196d',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/ingredient/1/show',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 46
+  },
+  level: 'info',
+  message: 'HTTP GET /user/ingredient/1/show',
+  timestamp: '2023-08-20T12:27:11.543Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/nutritional/1/show',
+      headers: {
+        accept: 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '0328133a-e499-40e0-845d-f089bc145af6',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/nutritional/1/show',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'HTTP GET /user/nutritional/1/show',
+  timestamp: '2023-08-20T12:27:24.959Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyMzc4Mzg3LCJleHAiOjE2OTI3MzgzODd9.9XGbbAAstygpWX9AAcAqgebYOUvMLWfI_E30rkRoWsA',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': 'b7e5ec8b-f247-4355-bb41-f2cfb13c833b',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 33
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-20T12:29:47.831Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/login',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '0944b66e-727b-4d53-91bc-9364c6b3d006',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '45'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/login',
+      query: {}
+    },
+    res: { statusCode: 422 },
+    responseTime: 7
+  },
+  level: 'warn',
+  message: 'HTTP POST /user/auth/login',
+  timestamp: '2023-08-20T12:30:02.185Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/refreshtoken',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '7e01d4f6-ae5f-430d-b4a8-5568def49b0e',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '150'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/refreshtoken',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/refreshtoken',
+  timestamp: '2023-08-20T12:30:07.572Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNTM0NjA3LCJleHAiOjE2OTI4OTQ2MDd9.KofgWE7fHlOzt6LVP3UbZeGLt6wETWyFZCljYiFbuzI',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '45ac796c-16dd-4ce6-b385-1bce3556f248',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 13
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-20T12:30:13.395Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNTM0NjA3LCJleHAiOjE2OTI4OTQ2MDd9.KofgWE7fHlOzt6LVP3UbZeGLt6wETWyFZCljYiFbuzI',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '4f56c69b-4f4c-4337-8336-ed6b9bf40869',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 11
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-20T12:30:51.741Z'
+}
