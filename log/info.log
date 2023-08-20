@@ -92523,3 +92523,81 @@
   message: 'HTTP GET /user/showuserinfo',
   timestamp: '2023-08-20T12:30:51.741Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNTM0NjA3LCJleHAiOjE2OTI4OTQ2MDd9.KofgWE7fHlOzt6LVP3UbZeGLt6wETWyFZCljYiFbuzI',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '2a3ed7d8-a995-4712-a6f6-e51ecc94a70c',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 25
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-20T12:31:15.686Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/auth/register',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/x-www-form-urlencoded',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '3c98a554-87d8-4f81-a465-ca053e7b7570',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '115'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/auth/register',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 154
+  },
+  level: 'info',
+  message: 'HTTP POST /user/auth/register',
+  timestamp: '2023-08-20T12:31:42.692Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/showuserinfo',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkyNTM0NzAyLCJleHAiOjE2OTI4OTQ3MDJ9.3m19c-h1rlzb6j5Q0DyZuxbfevwTO5PtRVtv4xCxdPE',
+        'user-agent': 'PostmanRuntime/7.32.3',
+        'postman-token': '08942b64-0321-4039-af6f-30960fa57bcf',
+        host: 'localhost:5000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/showuserinfo',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 5
+  },
+  level: 'info',
+  message: 'HTTP GET /user/showuserinfo',
+  timestamp: '2023-08-20T12:31:49.164Z'
+}
